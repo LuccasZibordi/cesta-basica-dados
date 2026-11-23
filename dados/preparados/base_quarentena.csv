@@ -1,0 +1,152 @@
+Mes_Ano_Data,Data_Coleta,Estab,Produto,Marca,Preco,Quantidade,PPK,linha_origem,mes,data_coleta,mercado,marca,produto,unidade,unidade_status,preco_embalagem,quantidade,ppk_informado,preco_unitario,duplicata_de,status,motivos
+2024-10-01,2024-10-07,SUP_32,Banana Nanica,,999,1,999,22454,2024-10-01,2024-10-07,SUP_32,,Banana Nanica,kg,inferida,999.0,1.0,999.0,999.0,,quarentena,marca_ausente;preco_suspeito
+2025-05-01,2025-05-06,SUP_11,Tomate,,11.99,20,0.5995,30737,2025-05-01,2025-05-06,SUP_11,,Tomate,kg,inferida,11.99,20.0,0.5995,0.5995,,quarentena,marca_ausente;quantidade_suspeita
+2025-07-01,2025-07-16,SUP_30,Tomate,,8.99,20,0.4495,32954,2025-07-01,2025-07-16,SUP_30,,Tomate,kg,inferida,8.99,20.0,0.4495,0.4495,,quarentena,marca_ausente;quantidade_suspeita
+2025-10-01,2025-10-17,SUP_47,Pão Francês,,0.1,1,0.1,35920,2025-10-01,2025-10-17,SUP_47,,Pão Francês,kg,inferida,0.1,1.0,0.1,0.1,,quarentena,marca_ausente;preco_suspeito
+2025-10-01,2025-10-13,SUP_32,Ovo,,12.9,1,12.9,36074,2025-10-01,2025-10-13,SUP_32,,Ovo,unidade,inferida,12.9,1.0,12.9,12.9,,quarentena,marca_ausente;quantidade_suspeita
+2025-10-01,2025-10-17,SUP_36,Pão Francês,,0.1,1,0.1,36155,2025-10-01,2025-10-17,SUP_36,,Pão Francês,kg,inferida,0.1,1.0,0.1,0.1,,quarentena,marca_ausente;preco_suspeito
+2025-11-01,,SUP_17,Carne Bovina Coxão Mole,,0.1,1,0.1,37312,2025-11-01,,SUP_17,,Carne Bovina Coxão Mole,kg,inferida,0.1,1.0,0.1,0.1,,quarentena,coleta_ausente;marca_ausente;preco_suspeito
+2025-11-01,,SUP_17,Frango Sobrecoxa,,0.1,1,0.1,37316,2025-11-01,,SUP_17,,Frango Sobrecoxa,kg,inferida,0.1,1.0,0.1,0.1,,quarentena,coleta_ausente;marca_ausente;preco_suspeito
+2025-12-01,,SUP_17,Frango Sobrecoxa,,0.1,1,0.1,38572,2025-12-01,,SUP_17,,Frango Sobrecoxa,kg,inferida,0.1,1.0,0.1,0.1,,quarentena,coleta_ausente;marca_ausente;preco_suspeito
+2026-01-01,,SUP_24,Manteiga,Tirolez,13.99,3,4.6633,39441,2026-01-01,,SUP_24,Tirolez,Manteiga,kg,inferida,13.99,3.0,4.6633,4.663333333333333,,quarentena,coleta_ausente;quantidade_suspeita
+2026-01-01,,SUP_24,Manteiga,Itambé,13.99,3,4.6633,39442,2026-01-01,,SUP_24,Itambé,Manteiga,kg,inferida,13.99,3.0,4.6633,4.663333333333333,,quarentena,coleta_ausente;quantidade_suspeita
+2026-01-01,,SUP_27,Feijão,Joli,8.99,3,2.9967,39589,2026-01-01,,SUP_27,Joli,Feijão,kg,inferida,8.99,3.0,2.9967,2.9966666666666666,,quarentena,coleta_ausente;quantidade_suspeita
+2026-01-01,,SUP_19,Farinha de Trigo,Renata,6.19,3,2.0633,39598,2026-01-01,,SUP_19,Renata,Farinha de Trigo,kg,inferida,6.19,3.0,2.0633,2.0633333333333335,,quarentena,coleta_ausente;quantidade_suspeita
+2026-02-01,,SUP_38,Açúcar,União,4.58,3,1.5267,39795,2026-02-01,,SUP_38,União,Açúcar,kg,inferida,4.58,3.0,1.5267,1.5266666666666666,,quarentena,coleta_ausente;quantidade_suspeita
+2026-03-01,,SUP_50,Farinha,Renata,9.99,1,9.99,40327,2026-03-01,,SUP_50,Renata,Farinha,desconhecida,pendente,9.99,1.0,9.99,9.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Farinha,Renata,8.79,1,8.79,40328,2026-03-01,,SUP_13,Renata,Farinha,desconhecida,pendente,8.79,1.0,8.79,8.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Farinha,Renata,8.19,1,8.19,40339,2026-03-01,,SUP_20,Renata,Farinha,desconhecida,pendente,8.19,1.0,8.19,8.19,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_01,Macarrão,Adria,3.75,0.5,7.5,40348,2026-03-01,,SUP_01,Adria,Macarrão,desconhecida,pendente,3.75,0.5,7.5,7.5,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_01,Macarrão,Dona Benta,3.39,0.5,6.78,40349,2026-03-01,,SUP_01,Dona Benta,Macarrão,desconhecida,pendente,3.39,0.5,6.78,6.78,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Macarrão,Outro,2.99,0.5,5.98,40380,2026-03-01,,SUP_04,Outro,Macarrão,desconhecida,pendente,2.99,0.5,5.98,5.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Macarrão,Renata,3.69,0.5,7.38,40381,2026-03-01,,SUP_04,Renata,Macarrão,desconhecida,pendente,3.69,0.5,7.38,7.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Pão,,12.9,1,12.9,40394,2026-03-01,,SUP_04,,Pão,desconhecida,pendente,12.9,1.0,12.9,12.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Farinha,Dona Benta,8.19,1,8.19,40396,2026-03-01,,SUP_41,Dona Benta,Farinha,desconhecida,pendente,8.19,1.0,8.19,8.19,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Farinha,Renata,8.19,1,8.19,40397,2026-03-01,,SUP_18,Renata,Farinha,desconhecida,pendente,8.19,1.0,8.19,8.19,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Farinha,Renata,7.99,1,7.99,40398,2026-03-01,,SUP_27,Renata,Farinha,desconhecida,pendente,7.99,1.0,7.99,7.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Macarrão,Dona Benta,2.99,1,2.99,40417,2026-03-01,,SUP_11,Dona Benta,Macarrão,desconhecida,pendente,2.99,1.0,2.99,2.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Macarrão,Adria,3.99,1,3.99,40418,2026-03-01,,SUP_11,Adria,Macarrão,desconhecida,pendente,3.99,1.0,3.99,3.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Pão,,17.9,1,17.9,40433,2026-03-01,,SUP_11,,Pão,desconhecida,pendente,17.9,1.0,17.9,17.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Farinha,Famiglia Venturelli,7.99,1,7.99,40435,2026-03-01,,SUP_39,Famiglia Venturelli,Farinha,desconhecida,pendente,7.99,1.0,7.99,7.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Farinha,Famiglia Venturelli,7.99,1,7.99,40436,2026-03-01,,SUP_50,Famiglia Venturelli,Farinha,desconhecida,pendente,7.99,1.0,7.99,7.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Farinha,Renata,7.55,1,7.55,40437,2026-03-01,,SUP_38,Renata,Farinha,desconhecida,pendente,7.55,1.0,7.55,7.55,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Farinha,Renata,7.55,1,7.55,40438,2026-03-01,,SUP_41,Renata,Farinha,desconhecida,pendente,7.55,1.0,7.55,7.55,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Macarrão,Adria,4.29,0.5,8.58,40460,2026-03-01,,SUP_13,Adria,Macarrão,desconhecida,pendente,4.29,0.5,8.58,8.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Macarrão,Dona Benta,2.99,0.5,5.98,40461,2026-03-01,,SUP_13,Dona Benta,Macarrão,desconhecida,pendente,2.99,0.5,5.98,5.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Macarrão,Renata,4.09,0.5,8.18,40462,2026-03-01,,SUP_13,Renata,Macarrão,desconhecida,pendente,4.09,0.5,8.18,8.18,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Macarrão,Adria,2.99,0.5,5.98,40463,2026-03-01,,SUP_13,Adria,Macarrão,desconhecida,pendente,2.99,0.5,5.98,5.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Pão,,19.9,1,19.9,40481,2026-03-01,,SUP_13,,Pão,desconhecida,pendente,19.9,1.0,19.9,19.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Farinha,Renata,7.49,1,7.49,40483,2026-03-01,,SUP_51,Renata,Farinha,desconhecida,pendente,7.49,1.0,7.49,7.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Farinha,Renata,7.35,1,7.35,40484,2026-03-01,,SUP_30,Renata,Farinha,desconhecida,pendente,7.35,1.0,7.35,7.35,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Macarrão,Petybon,4.69,0.5,9.38,40503,2026-03-01,,SUP_15,Petybon,Macarrão,desconhecida,pendente,4.69,0.5,9.38,9.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Macarrão,Renata,5.19,0.5,10.38,40504,2026-03-01,,SUP_15,Renata,Macarrão,desconhecida,pendente,5.19,0.5,10.38,10.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Pão,,18.99,1,18.99,40521,2026-03-01,,SUP_15,,Pão,desconhecida,pendente,18.99,1.0,18.99,18.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Farinha,Dona Benta,6.99,1,6.99,40523,2026-03-01,,SUP_27,Dona Benta,Farinha,desconhecida,pendente,6.99,1.0,6.99,6.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Farinha,Rosa Branca,6.99,1,6.99,40524,2026-03-01,,SUP_27,Rosa Branca,Farinha,desconhecida,pendente,6.99,1.0,6.99,6.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Farinha,Famiglia Venturelli,6.99,1,6.99,40525,2026-03-01,,SUP_27,Famiglia Venturelli,Farinha,desconhecida,pendente,6.99,1.0,6.99,6.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Macarrão,Petybon,4.69,0.5,9.38,40544,2026-03-01,,SUP_16,Petybon,Macarrão,desconhecida,pendente,4.69,0.5,9.38,9.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Macarrão,Outro,5.39,0.5,10.78,40545,2026-03-01,,SUP_16,Outro,Macarrão,desconhecida,pendente,5.39,0.5,10.78,10.78,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Pão,,18.99,1,18.99,40559,2026-03-01,,SUP_16,,Pão,desconhecida,pendente,18.99,1.0,18.99,18.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Farinha,Dona Benta,6.99,1,6.99,40562,2026-03-01,,SUP_39,Dona Benta,Farinha,desconhecida,pendente,6.99,1.0,6.99,6.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Farinha,Dona Benta,6.99,1,6.99,40563,2026-03-01,,SUP_50,Dona Benta,Farinha,desconhecida,pendente,6.99,1.0,6.99,6.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Farinha,Nita,6.79,1,6.79,40564,2026-03-01,,SUP_46,Nita,Farinha,desconhecida,pendente,6.79,1.0,6.79,6.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Farinha,Nita,6.79,1,6.79,40565,2026-03-01,,SUP_45,Nita,Farinha,desconhecida,pendente,6.79,1.0,6.79,6.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Farinha,Dona Benta,6.49,1,6.49,40566,2026-03-01,,SUP_20,Dona Benta,Farinha,desconhecida,pendente,6.49,1.0,6.49,6.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Farinha,Dona Benta,6.49,1,6.49,40567,2026-03-01,,SUP_51,Dona Benta,Farinha,desconhecida,pendente,6.49,1.0,6.49,6.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Macarrão,Renata,9.79,0.5,19.58,40585,2026-03-01,,SUP_20,Renata,Macarrão,desconhecida,pendente,9.79,0.5,19.58,19.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Macarrão,Outro,8.79,0.5,17.58,40586,2026-03-01,,SUP_20,Outro,Macarrão,desconhecida,pendente,8.79,0.5,17.58,17.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Pão,,19.99,1,19.99,40602,2026-03-01,,SUP_20,,Pão,desconhecida,pendente,19.99,1.0,19.99,19.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Farinha,Dona Benta,6.49,1,6.49,40604,2026-03-01,,SUP_18,Dona Benta,Farinha,desconhecida,pendente,6.49,1.0,6.49,6.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Macarrão,Dona Benta,3.89,0.5,7.78,40623,2026-03-01,,SUP_22,Dona Benta,Macarrão,desconhecida,pendente,3.89,0.5,7.78,7.78,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Macarrão,Galo,4.99,0.5,9.98,40624,2026-03-01,,SUP_22,Galo,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Macarrão,Renata,5.19,0.5,10.38,40625,2026-03-01,,SUP_22,Renata,Macarrão,desconhecida,pendente,5.19,0.5,10.38,10.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Pão,,16.99,1,16.99,40639,2026-03-01,,SUP_22,,Pão,desconhecida,pendente,16.99,1.0,16.99,16.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_20,Farinha,Globo,5.99,1,5.99,40642,2026-03-01,,SUP_20,Globo,Farinha,desconhecida,pendente,5.99,1.0,5.99,5.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Farinha,Renata,5.99,1,5.99,40643,2026-03-01,,SUP_46,Renata,Farinha,desconhecida,pendente,5.99,1.0,5.99,5.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Farinha,Globo,5.99,1,5.99,40654,2026-03-01,,SUP_18,Globo,Farinha,desconhecida,pendente,5.99,1.0,5.99,5.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Macarrão,Galo,4.99,0.5,9.98,40663,2026-03-01,,SUP_27,Galo,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Macarrão,Petybon,4.99,0.5,9.98,40664,2026-03-01,,SUP_27,Petybon,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_27,Pão,,16.99,1,16.99,40678,2026-03-01,,SUP_27,,Pão,desconhecida,pendente,16.99,1.0,16.99,16.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Farinha,Renata,5.99,1,5.99,40681,2026-03-01,,SUP_45,Renata,Farinha,desconhecida,pendente,5.99,1.0,5.99,5.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Farinha,Dona Benta,5.98,1,5.98,40682,2026-03-01,,SUP_38,Dona Benta,Farinha,desconhecida,pendente,5.98,1.0,5.98,5.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Farinha,Dona Benta,5.89,1,5.89,40683,2026-03-01,,SUP_22,Dona Benta,Farinha,desconhecida,pendente,5.89,1.0,5.89,5.89,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Farinha,Nita,5.79,1,5.79,40684,2026-03-01,,SUP_32,Nita,Farinha,desconhecida,pendente,5.79,1.0,5.79,5.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Macarrão,Galo,3.69,0.5,7.38,40706,2026-03-01,,SUP_30,Galo,Macarrão,desconhecida,pendente,3.69,0.5,7.38,7.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Macarrão,Dona Benta,4.25,0.5,8.5,40707,2026-03-01,,SUP_30,Dona Benta,Macarrão,desconhecida,pendente,4.25,0.5,8.5,8.5,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Pão,,16.99,1,16.99,40723,2026-03-01,,SUP_30,,Pão,desconhecida,pendente,16.99,1.0,16.99,16.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Farinha,Nita,5.79,1,5.79,40726,2026-03-01,,SUP_31,Nita,Farinha,desconhecida,pendente,5.79,1.0,5.79,5.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Farinha,Nita,5.65,1,5.65,40727,2026-03-01,,SUP_41,Nita,Farinha,desconhecida,pendente,5.65,1.0,5.65,5.65,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Farinha,Dona Benta,5.49,1,5.49,40728,2026-03-01,,SUP_15,Dona Benta,Farinha,desconhecida,pendente,5.49,1.0,5.49,5.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Macarrão,Renata,4.99,0.5,9.98,40747,2026-03-01,,SUP_32,Renata,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Macarrão,Adria,9.99,0.5,19.98,40748,2026-03-01,,SUP_32,Adria,Macarrão,desconhecida,pendente,9.99,0.5,19.98,19.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Macarrão,Dona Benta,4.99,0.5,9.98,40749,2026-03-01,,SUP_32,Dona Benta,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Farinha,Renata,5.49,1,5.49,40753,2026-03-01,,SUP_15,Renata,Farinha,desconhecida,pendente,5.49,1.0,5.49,5.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Pão,,19.9,1,19.9,40766,2026-03-01,,SUP_32,,Pão,desconhecida,pendente,19.9,1.0,19.9,19.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Farinha,Dona Benta,5.49,1,5.49,40769,2026-03-01,,SUP_16,Dona Benta,Farinha,desconhecida,pendente,5.49,1.0,5.49,5.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Farinha,Renata,5.49,3,1.83,40770,2026-03-01,,SUP_16,Renata,Farinha,desconhecida,pendente,5.49,3.0,1.83,1.83,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Macarrão,Outro,5.8,0.5,11.6,40785,2026-03-01,,SUP_38,Outro,Macarrão,desconhecida,pendente,5.8,0.5,11.6,11.6,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Macarrão,Outro,4.63,0.5,9.26,40786,2026-03-01,,SUP_38,Outro,Macarrão,desconhecida,pendente,4.63,0.5,9.26,9.26,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Pão,,19.99,1,19.99,40803,2026-03-01,,SUP_38,,Pão,desconhecida,pendente,19.99,1.0,19.99,19.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_16,Farinha,Nita,5.39,1,5.39,40805,2026-03-01,,SUP_16,Nita,Farinha,desconhecida,pendente,5.39,1.0,5.39,5.39,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Farinha,Nita,5.39,1,5.39,40816,2026-03-01,,SUP_30,Nita,Farinha,desconhecida,pendente,5.39,1.0,5.39,5.39,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Macarrão,Galo,4.99,0.5,9.98,40824,2026-03-01,,SUP_39,Galo,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Macarrão,Renata,4.99,0.5,9.98,40825,2026-03-01,,SUP_39,Renata,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Pão,,17.99,1,17.99,40837,2026-03-01,,SUP_39,,Pão,desconhecida,pendente,17.99,1.0,17.99,17.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Farinha,Renata,5.29,1,5.29,40840,2026-03-01,,SUP_22,Renata,Farinha,desconhecida,pendente,5.29,1.0,5.29,5.29,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Farinha,Dona Benta,5.19,1,5.19,40841,2026-03-01,,SUP_46,Dona Benta,Farinha,desconhecida,pendente,5.19,1.0,5.19,5.19,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Farinha,Dona Benta,5.19,1,5.19,40842,2026-03-01,,SUP_45,Dona Benta,Farinha,desconhecida,pendente,5.19,1.0,5.19,5.19,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_01,Farinha,Dona Benta,4.99,1,4.99,40843,2026-03-01,,SUP_01,Dona Benta,Farinha,desconhecida,pendente,4.99,1.0,4.99,4.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Macarrão,Adria,3.99,0.5,7.98,40861,2026-03-01,,SUP_41,Adria,Macarrão,desconhecida,pendente,3.99,0.5,7.98,7.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Macarrão,Petybon,5.99,0.5,11.98,40862,2026-03-01,,SUP_41,Petybon,Macarrão,desconhecida,pendente,5.99,0.5,11.98,11.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_41,Pão,,16.95,1,16.95,40865,2026-03-01,,SUP_41,,Pão,desconhecida,pendente,16.95,1.0,16.95,16.95,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_30,Farinha,Dona Benta,4.99,1,4.99,40866,2026-03-01,,SUP_30,Dona Benta,Farinha,desconhecida,pendente,4.99,1.0,4.99,4.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_39,Farinha,Rosa Branca,4.99,1,4.99,40890,2026-03-01,,SUP_39,Rosa Branca,Farinha,desconhecida,pendente,4.99,1.0,4.99,4.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Farinha,Rosa Branca,4.99,1,4.99,40891,2026-03-01,,SUP_50,Rosa Branca,Farinha,desconhecida,pendente,4.99,1.0,4.99,4.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Macarrão,Renata,4.59,0.5,9.18,40900,2026-03-01,,SUP_43,Renata,Macarrão,desconhecida,pendente,4.59,0.5,9.18,9.18,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Macarrão,Petybon,4.69,0.5,9.38,40901,2026-03-01,,SUP_43,Petybon,Macarrão,desconhecida,pendente,4.69,0.5,9.38,9.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Pão,,16.95,1,16.95,40916,2026-03-01,,SUP_43,,Pão,desconhecida,pendente,16.95,1.0,16.95,16.95,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Farinha,Famiglia Venturelli,4.69,1,4.69,40919,2026-03-01,,SUP_04,Famiglia Venturelli,Farinha,desconhecida,pendente,4.69,1.0,4.69,4.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Macarrão,Adria,3.79,0.5,7.58,40938,2026-03-01,,SUP_46,Adria,Macarrão,desconhecida,pendente,3.79,0.5,7.58,7.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Macarrão,Dona Benta,3.59,0.5,7.18,40939,2026-03-01,,SUP_46,Dona Benta,Macarrão,desconhecida,pendente,3.59,0.5,7.18,7.18,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_46,Macarrão,Galo,3.69,0.5,7.38,40940,2026-03-01,,SUP_46,Galo,Macarrão,desconhecida,pendente,3.69,0.5,7.38,7.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_32,Farinha,Sol,4.69,1,4.69,40957,2026-03-01,,SUP_32,Sol,Farinha,desconhecida,pendente,4.69,1.0,4.69,4.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Farinha,Famiglia Venturelli,4.69,1,4.69,40958,2026-03-01,,SUP_03,Famiglia Venturelli,Farinha,desconhecida,pendente,4.69,1.0,4.69,4.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Farinha,Sol,4.69,1,4.69,40959,2026-03-01,,SUP_31,Sol,Farinha,desconhecida,pendente,4.69,1.0,4.69,4.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_01,Farinha,Nita,4.59,1,4.59,40960,2026-03-01,,SUP_01,Nita,Farinha,desconhecida,pendente,4.59,1.0,4.59,4.59,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Farinha,Dona Benta,4.59,1,4.59,40961,2026-03-01,,SUP_11,Dona Benta,Farinha,desconhecida,pendente,4.59,1.0,4.59,4.59,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_38,Farinha,Outra,4.49,1,4.49,40962,2026-03-01,,SUP_38,Outra,Farinha,desconhecida,pendente,4.49,1.0,4.49,4.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Farinha,Nita,4.39,1,4.39,40963,2026-03-01,,SUP_04,Nita,Farinha,desconhecida,pendente,4.39,1.0,4.39,4.39,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Macarrão,Galo,4.69,0.5,9.38,40980,2026-03-01,,SUP_50,Galo,Macarrão,desconhecida,pendente,4.69,0.5,9.38,9.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Macarrão,Dona Benta,4.59,0.5,9.18,40981,2026-03-01,,SUP_50,Dona Benta,Macarrão,desconhecida,pendente,4.59,0.5,9.18,9.18,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_50,Pão,,17.99,1,17.99,40996,2026-03-01,,SUP_50,,Pão,desconhecida,pendente,17.99,1.0,17.99,17.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Farinha,Nita,4.39,1,4.39,40999,2026-03-01,,SUP_03,Nita,Farinha,desconhecida,pendente,4.39,1.0,4.39,4.39,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_01,Farinha,Rosa Branca,4.28,1,4.28,41000,2026-03-01,,SUP_01,Rosa Branca,Farinha,desconhecida,pendente,4.28,1.0,4.28,4.28,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Macarrão,Renata,7.99,0.5,15.98,41020,2026-03-01,,SUP_51,Renata,Macarrão,desconhecida,pendente,7.99,0.5,15.98,15.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Macarrão,Galo,4.49,0.5,8.98,41021,2026-03-01,,SUP_51,Galo,Macarrão,desconhecida,pendente,4.49,0.5,8.98,8.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Macarrão,Outro,7.99,0.5,15.98,41022,2026-03-01,,SUP_51,Outro,Macarrão,desconhecida,pendente,7.99,0.5,15.98,15.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Pão,,18.99,1,18.99,41035,2026-03-01,,SUP_51,,Pão,desconhecida,pendente,18.99,1.0,18.99,18.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Farinha,Adria,4.09,1,4.09,41038,2026-03-01,,SUP_13,Adria,Farinha,desconhecida,pendente,4.09,1.0,4.09,4.09,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Macarrão,Outro,2.99,0.5,5.98,41058,2026-03-01,,SUP_03,Outro,Macarrão,desconhecida,pendente,2.99,0.5,5.98,5.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Macarrão,Renata,3.69,0.5,7.38,41059,2026-03-01,,SUP_03,Renata,Macarrão,desconhecida,pendente,3.69,0.5,7.38,7.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Pão,,12.9,1,12.9,41072,2026-03-01,,SUP_03,,Pão,desconhecida,pendente,12.9,1.0,12.9,12.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_22,Farinha,Outra,4.09,1,4.09,41075,2026-03-01,,SUP_22,Outra,Farinha,desconhecida,pendente,4.09,1.0,4.09,4.09,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_13,Farinha,Anaconda,3.99,1,3.99,41076,2026-03-01,,SUP_13,Anaconda,Farinha,desconhecida,pendente,3.99,1.0,3.99,3.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_15,Farinha,Globo,3.99,1,3.99,41077,2026-03-01,,SUP_15,Globo,Farinha,desconhecida,pendente,3.99,1.0,3.99,3.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Farinha,Renata,3.99,1,3.99,41078,2026-03-01,,SUP_43,Renata,Farinha,desconhecida,pendente,3.99,1.0,3.99,3.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Farinha,Dona Benta,3.99,1,3.99,41079,2026-03-01,,SUP_43,Dona Benta,Farinha,desconhecida,pendente,3.99,1.0,3.99,3.99,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Farinha,Nita,3.89,1,3.89,41080,2026-03-01,,SUP_11,Nita,Farinha,desconhecida,pendente,3.89,1.0,3.89,3.89,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Macarrão,Renata,9.79,0.5,19.58,41098,2026-03-01,,SUP_18,Renata,Macarrão,desconhecida,pendente,9.79,0.5,19.58,19.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Macarrão,Outro,8.79,0.5,17.58,41099,2026-03-01,,SUP_18,Outro,Macarrão,desconhecida,pendente,8.79,0.5,17.58,17.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_18,Pão,,19.99,1,19.99,41115,2026-03-01,,SUP_18,,Pão,desconhecida,pendente,19.99,1.0,19.99,19.99,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_11,Farinha,Anaconda,3.89,1,3.89,41117,2026-03-01,,SUP_11,Anaconda,Farinha,desconhecida,pendente,3.89,1.0,3.89,3.89,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Macarrão,Renata,4.99,0.5,9.98,41136,2026-03-01,,SUP_31,Renata,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Macarrão,Adria,9.99,0.5,19.98,41137,2026-03-01,,SUP_31,Adria,Macarrão,desconhecida,pendente,9.99,0.5,19.98,19.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Macarrão,Dona Benta,4.99,0.5,9.98,41138,2026-03-01,,SUP_31,Dona Benta,Macarrão,desconhecida,pendente,4.99,0.5,9.98,9.98,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_51,Farinha,Globo,3.79,1,3.79,41142,2026-03-01,,SUP_51,Globo,Farinha,desconhecida,pendente,3.79,1.0,3.79,3.79,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_31,Pão,,19.9,1,19.9,41155,2026-03-01,,SUP_31,,Pão,desconhecida,pendente,19.9,1.0,19.9,19.9,,quarentena,coleta_ausente;marca_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Macarrão,Adria,3.79,0.5,7.58,41176,2026-03-01,,SUP_45,Adria,Macarrão,desconhecida,pendente,3.79,0.5,7.58,7.58,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Macarrão,Dona Benta,3.59,0.5,7.18,41177,2026-03-01,,SUP_45,Dona Benta,Macarrão,desconhecida,pendente,3.59,0.5,7.18,7.18,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_45,Macarrão,Galo,3.69,0.5,7.38,41178,2026-03-01,,SUP_45,Galo,Macarrão,desconhecida,pendente,3.69,0.5,7.38,7.38,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_04,Farinha,Anaconda,3.69,1,3.69,41195,2026-03-01,,SUP_04,Anaconda,Farinha,desconhecida,pendente,3.69,1.0,3.69,3.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_03,Farinha,Anaconda,3.69,1,3.69,41196,2026-03-01,,SUP_03,Anaconda,Farinha,desconhecida,pendente,3.69,1.0,3.69,3.69,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida
+2026-03-01,,SUP_43,Farinha,Sol,3.49,1,3.49,41197,2026-03-01,,SUP_43,Sol,Farinha,desconhecida,pendente,3.49,1.0,3.49,3.49,,quarentena,coleta_ausente;nome_ambiguo;unidade_desconhecida

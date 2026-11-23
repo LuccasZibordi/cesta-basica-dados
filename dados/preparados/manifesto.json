@@ -1,0 +1,33 @@
+{
+  "status": "concluido",
+  "inicio_utc": "2026-11-20T20:57:55.182053+00:00",
+  "entrada": "/home/luccas/Projects/cesta-basica-dados/ICB_DADOS_2026.xlsx",
+  "entrada_sha256": "d92c1a8b2e3273dc90a2f6c07c1620940ec83f114ab7548f9e8aaf45f96fa836",
+  "config_sha256": "fd0c860fdd31df5ea0b4b9421a4a86dd10c01f085727abb4f3f26736f90f7360",
+  "python": "3.12.15",
+  "dependencias": {
+    "pandas": "3.1.1",
+    "openpyxl": "3.1.5",
+    "numpy": "2.5.5"
+  },
+  "codigo_sha256": {
+    "main.py": "73057dcaff65b579bd9c52f7ac3974f6f1ced475bcfadb74efe4a9186f78579e",
+    "preprocessing.py": "7c4e0bd46de1c26c6845a70dc61779847802c628d6e5dba52d1b71fa2c019fec",
+    "series_temporais.py": "65ec2c7509657c3da631185f2c764992209f23e27e95da6daeabe9b4e09e5e97"
+  },
+  "modulos": {},
+  "artefatos_sha256": {
+    "base_auditada.csv": "1c6090c2e335f45038b83c2036b1fc23322891bebdb761171cce91c4534a5b93",
+    "base_duplicatas.csv": "6be97aa46872f74e2414b4a356061eee470b19f0da695663ef07f6cc3b80b965",
+    "base_quarentena.csv": "876c8c81366dfc1affb64f0f6fb8563932fcc82e3e8e4712ea2d60fa7afee8e0",
+    "base_tratada.csv": "b382024170e8e48309264b231f3f15e1ee01e083280b99ae2bca4d9a08d6a568",
+    "cobertura.csv": "78ea01e2e5747001cb6f5c99511eaf3881d20a9fdb335e7185ae2341c31ff4f3",
+    "cobertura_mensal.csv": "51ca6b006037f15082c8c6c8b88006844a2ab23f529e682c695bf5964db35815",
+    "diagnostico.json": "5b5dcc3fb908d76aafafba4017993a698a232b6c982ae27889c0a3f250578372",
+    "diagnostico.md": "a44678dd6d536a44f024973ef6048c7c9e0af342510c7c154d7c983bb58c576a",
+    "regras_aplicadas.json": "8dba262e0077406b7a91b0a37d535d7624300fa2f8d7352acea7a45f44340377",
+    "series_geral.csv": "13d3cd5cce6ec70740e424a3e130ac1db18d9d99698afad54ea18d7d248822b6",
+    "series_mercado.csv": "7c457b14178d1744dacf03b53904bd9062f8afdae4999aebb7b3caaaae5530fa"
+  },
+  "fim_utc": "2026-11-20T20:58:00.000601+00:00"
+}
