@@ -1,0 +1,46 @@
+{
+  "registros": 46264,
+  "status": {
+    "valido": 44370,
+    "duplicata": 1743,
+    "quarentena": 151
+  },
+  "motivos": {
+    "coleta_ausente": 9818,
+    "marca_ausente": 9346,
+    "marca_numerica": 324,
+    "nome_ambiguo": 137,
+    "nome_normalizado": 184,
+    "preco_suspeito": 6,
+    "quantidade_suspeita": 8,
+    "repeticao_exata": 1743,
+    "unidade_desconhecida": 137
+  },
+  "ausentes_originais": {
+    "Mes_Ano_Data": 0,
+    "Data_Coleta": 9818,
+    "Estab": 0,
+    "Produto": 0,
+    "Marca": 9346,
+    "Preco": 0,
+    "Quantidade": 0,
+    "PPK": 0
+  },
+  "primeiro_mes": "2022-09-01",
+  "ultimo_mes": "2026-08-01",
+  "meses_distintos_origem": 48,
+  "mercados": 51,
+  "rotulos_produtos_originais": 30,
+  "produtos_normalizados": 26,
+  "pares_mercado_produto": 1004,
+  "pares_completos": 34,
+  "unidades_confirmadas": [],
+  "limitacoes": [
+    "Unidades inferidas exigem confirmação no dicionário da coleta.",
+    "Quarentena indica revisão pendente, não erro comprovado. Regras não detectam todos os erros.",
+    "Repetições exatas são excluídas por hipótese configurável; todas preservadas na auditoria.",
+    "Média geral usa mercados disponíveis; mudanças de composição podem afetar a série.",
+    "Cobertura usa a janela global e não comprova que a loja esteve ativa durante todo o período.",
+    "Não houve imputação, treinamento de modelos, cálculo de cesta ou conclusão das questões."
+  ]
+}
