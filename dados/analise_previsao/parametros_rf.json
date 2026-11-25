@@ -1,0 +1,62 @@
+{
+  "Arroz":{
+    "n_estimators":100,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Açúcar":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Banana Nanica":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Banana Prata":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Batata":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Café":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Carne Bovina Coxão Mole":{
+    "n_estimators":100,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Feijão":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Leite":{
+    "n_estimators":300,
+    "max_depth":5,
+    "min_samples_leaf":1
+  },
+  "Manteiga":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Tomate":{
+    "n_estimators":300,
+    "max_depth":null,
+    "min_samples_leaf":3
+  },
+  "Óleo":{
+    "n_estimators":100,
+    "max_depth":5,
+    "min_samples_leaf":1
+  }
+}

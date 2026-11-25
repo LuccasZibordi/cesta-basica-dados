@@ -6,8 +6,8 @@ Análise comparativa e preditiva de preços para planejamento financeiro familia
 
 - Preparação implementada e executada sobre `ICB_DADOS_2026.xlsx`.
 - Dados preparados em [`dados/preparados`](dados/preparados); leia primeiro o [diagnóstico](dados/preparados/diagnostico.md).
-- Comparação de mercados implementada em `comparacao_mercados.py`; a cesta e os resultados estão em `config/cesta_comparacao.json` e `dados/comparacao_integrada/analises/comparacao_mercados/`. A cesta unitária e o corte de cobertura são escolhas metodológicas explícitas desta comparação e podem ser alterados para análise de sensibilidade.
-- Sazonalidade e previsão continuam pendentes (integrantes 3 e 4). O contrato de integração foi testado com módulos de teste; a integração real da comparação é executável.
+- A previsão (integrante 4) está implementada em `previsao.py`/`avaliacao.py`, executada e documentada em `dados/analise_previsao/questao3.md`.
+- Comparação de mercados e sazonalidade são responsabilidades dos integrantes 2–3. Esses módulos ainda não foram entregues.
 - Unidades são inferidas; nomes genéricos e observações suspeitas aguardam revisão da fonte. Os CSVs são uma versão preliminar documentada para desenvolvimento, não resultados finais da pesquisa.
 
 ## Executar
@@ -40,8 +40,10 @@ O programa informa sucesso ou retorna código 1 em caso de falha. O `manifesto.j
 | `comparacao_mercados.py` | Custos de cesta, rankings, compra distribuída, gráficos e texto da questão 1 |
 | `config/cesta_comparacao.json` | Produtos, quantidades da cesta de referência e mínimo de meses completos |
 | `main.py` | Execução, exportação, diagnóstico e integração opcional |
+| `previsao.py` | Previsão a um mês: features, modelos cronológicos e saídas (integrante 4) |
+| `avaliacao.py` | MAE, RMSE, MAPE e comparação com o Naive (integrante 4) |
 | `config/tratamento.json` | Regras explícitas, aliases, unidades e justificativas |
-| `tests/` | Casos controlados de qualidade de dados, médias, lacunas e integração |
+| `tests/` | Casos controlados de qualidade de dados, médias, lacunas, previsão e integração |
 
 ## Entregar aos colegas
 
@@ -51,7 +53,7 @@ Compartilhe a pasta de dados inteira, junto de [contrato de dados](docs/contrato
 | --- | --- |
 | 2 — comparação | `series_mercado.csv`, `cobertura.csv`, `base_tratada.csv`; análise implementada em `comparacao_mercados.py` |
 | 3 — sazonalidade | `series_geral.csv` ou `series_mercado.csv`, `cobertura.csv` |
-| 4 — previsão | `series_geral.csv`, `cobertura.csv`; divisão cronológica e features ficam no seu módulo |
+| 4 — previsão | `series_geral.csv`; módulo entregue, saídas em `dados/analise_previsao` |
 
 Não somar preços unitários para calcular uma cesta sem definir quantidades consumidas. Não comparar cestas incompletas. Não preencher lacunas com zero. Todos os preços são nominais.
 
@@ -86,5 +88,6 @@ Os testes usam planilhas pequenas com resultados calculados à mão e não depen
 - [Métodos, decisões e limites](docs/metodologia.md)
 - [Contrato de dados e integração](docs/contrato_dados.md)
 - [Validação da entrega](docs/validacao.md)
+- [Validação da previsão](docs/validacao_previsao.md)
 
-Para fechar o trabalho completo ainda faltam: revisão das unidades/nomes/quarentena com a fonte; módulos de sazonalidade e previsão e sua integração; relatório coletivo, relatórios individuais de extensão e preparação da arguição. O modelo institucional e o prazo não foram fornecidos. Não há dashboard nem base externa nesta etapa.
+Para fechar o trabalho completo ainda faltam: revisão das unidades/nomes/quarentena com a fonte; definição coletiva da cesta, cobertura e períodos; módulos 2–3 e integração conjunta; relatório coletivo, relatórios individuais de extensão e preparação da arguição. O modelo institucional e o prazo não foram fornecidos. Não há dashboard nem base externa nesta etapa.
