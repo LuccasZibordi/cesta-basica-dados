@@ -1,3 +1,5 @@
+> Documento histórico da preparação do integrante 1 (20/11). Estado integrado atual: [validação final](../../validacao_final.md).
+
 # Integrante 1 — Implementation Plan
 
 > **For agentic workers:** executar sequencialmente com superpowers:executing-plans; conferir testes e registrar evidências abaixo.

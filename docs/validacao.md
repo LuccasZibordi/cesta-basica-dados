@@ -1,3 +1,5 @@
+> Registro histórico da etapa/branch original. Para a integração atual, consultar [validação final](validacao_final.md).
+
 # Validação — integrante 1
 
 Verificado em 20/11/2026, Python 3.12.15. Branch `feat/integrante-1-dados`; mudanças locais, sem commit/push.

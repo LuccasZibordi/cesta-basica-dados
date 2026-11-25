@@ -1,93 +1,78 @@
 # Cesta básica — PI e extensão
 
-Análise comparativa e preditiva de preços para planejamento financeiro familiar. O projeto reúne a preparação de dados do integrante 1 e a comparação de mercados do integrante 2.
+Exploração de preços para comparação de compras, sazonalidade e previsão mensal. As três questões estão implementadas. A entrega técnica atual usa um painel temporal comparável, explicita incertezas da base e inclui relatório coletivo gerado pelo código.
 
-## Estado da entrega
+## Ler os resultados
 
-- Preparação implementada e executada sobre `ICB_DADOS_2026.xlsx`.
-- Dados preparados em [`dados/preparados`](dados/preparados); leia primeiro o [diagnóstico](dados/preparados/diagnostico.md).
-- A previsão (integrante 4) está implementada em `previsao.py`/`avaliacao.py`, executada e documentada em `dados/analise_previsao/questao3.md`.
-- Comparação de mercados e sazonalidade são responsabilidades dos integrantes 2–3. Esses módulos ainda não foram entregues.
-- Unidades são inferidas; nomes genéricos e observações suspeitas aguardam revisão da fonte. Os CSVs são uma versão preliminar documentada para desenvolvimento, não resultados finais da pesquisa.
+- [Relatório coletivo em PDF](entrega/relatorio_coletivo.pdf).
+- [Relatório coletivo em HTML](dados/entrega_2026-11-25/relatorios/relatorio_coletivo.html): independente, com imagens incorporadas, pode ser aberto no navegador e impresso.
+- [Relatório coletivo em Markdown](dados/entrega_2026-11-25/relatorios/relatorio_coletivo.md).
+- [Pendências de entrega](docs/pendencias_entrega.md): os relatórios individuais ainda dependem do modelo institucional e de informações verdadeiras dos integrantes.
+- [Verificação final](docs/validacao_final.md) e [roteiro de arguição](docs/arguicao.md).
 
-## Executar
+A presença do relatório técnico não significa submissão ou validação de horas. Unidades e aliases permanecem hipóteses documentadas; não foram inventadas confirmações da coleta.
 
-Python 3.12 ou superior. No Linux/macOS:
+## Instalar e reproduzir
+
+Python 3.12 ou superior. Linux/macOS:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python main.py --saida dados/nova_execucao
+python main.py --saida dados/nova_entrega --modulos comparacao_mercados sazonalidade previsao
 ```
 
-No Windows, ative com `.venv\Scripts\activate` no lugar do comando `source`. Com `uv`, a instalação equivalente é `uv venv .venv` e `uv pip install --python .venv/bin/python -r requirements.txt`.
+Windows: ativar `.venv\Scripts\activate`. A execução completa leva alguns minutos, principalmente pelo ajuste dos modelos. Sempre escolher diretório novo/vazio; arquivos anteriores são preservados.
 
-A execução sem argumentos usa o Excel da raiz e a saída `dados/preparados`. Como esta entrega já inclui essa saída, escolha um **diretório novo/vazio** para reproduzir; arquivos existentes nunca são sobrescritos pelo programa. A execução demora alguns segundos nesta base.
-
-```bash
-python main.py --entrada ICB_DADOS_2026.xlsx --config config/tratamento.json --saida dados/reproducao
-```
-
-O programa informa sucesso ou retorna código 1 em caso de falha. O `manifesto.json` registra versões, hashes da origem/configuração/código, artefatos e estado da execução. Confirme `status: concluido` antes de consumir resultados.
-
-## O que cada arquivo faz
-
-| Arquivo | Responsabilidade |
-| --- | --- |
-| `preprocessing.py` | Leitura, validação, normalização, classificação e rastreabilidade |
-| `series_temporais.py` | Agregação por mês/mercado/produto, série geral e cobertura |
-| `comparacao_mercados.py` | Custos de cesta, rankings, compra distribuída, gráficos e texto da questão 1 |
-| `config/cesta_comparacao.json` | Produtos, quantidades da cesta de referência e mínimo de meses completos |
-| `main.py` | Execução, exportação, diagnóstico e integração opcional |
-| `previsao.py` | Previsão a um mês: features, modelos cronológicos e saídas (integrante 4) |
-| `avaliacao.py` | MAE, RMSE, MAPE e comparação com o Naive (integrante 4) |
-| `config/tratamento.json` | Regras explícitas, aliases, unidades e justificativas |
-| `tests/` | Casos controlados de qualidade de dados, médias, lacunas, previsão e integração |
-
-## Entregar aos colegas
-
-Compartilhe a pasta de dados inteira, junto de [contrato de dados](docs/contrato_dados.md) e [metodologia](docs/metodologia.md). A interpretação dos campos e das ausências faz parte da entrega.
-
-| Integrante | Arquivos iniciais |
-| --- | --- |
-| 2 — comparação | `series_mercado.csv`, `cobertura.csv`, `base_tratada.csv`; análise implementada em `comparacao_mercados.py` |
-| 3 — sazonalidade | `series_geral.csv` ou `series_mercado.csv`, `cobertura.csv` |
-| 4 — previsão | `series_geral.csv`; módulo entregue, saídas em `dados/analise_previsao` |
-
-Não somar preços unitários para calcular uma cesta sem definir quantidades consumidas. Não comparar cestas incompletas. Não preencher lacunas com zero. Todos os preços são nominais.
-
-Para executar a comparação de mercados integrada ao fluxo principal:
+Com os três módulos solicitados, o comando também executa as sensibilidades e monta o relatório coletivo em `relatorios/`. Sem `--modulos`, faz apenas preparação. Um subconjunto executa apenas as análises pedidas. Conferir `status: concluido` no manifesto antes de usar a saída.
 
 ```bash
-python main.py --saida dados/comparacao_integrada --modulos comparacao_mercados
-```
-
-Os módulos de sazonalidade e previsão serão integrados quando forem entregues pelos respectivos integrantes.
-
-Para reproduzir somente a comparação usando a base já preparada, escolha uma pasta de saída nova:
-
-```bash
-python comparacao_mercados.py --dados dados/preparados --saida dados/analise_comparacao_nova
-```
-
-O relatório da questão 1 fica em `dados/comparacao_integrada/analises/comparacao_mercados/questao_1_comparacao.md`. Os resultados refletem uma cesta comparativa unitária, mercados identificados apenas por códigos e unidades ainda inferidas; descreva esses limites ao apresentar as conclusões.
-
-## Verificar
-
-```bash
+python main.py --entrada ICB_DADOS_2026.xlsx --config config/tratamento.json --saida dados/preparacao_nova
+python comparacao_mercados.py --dados dados/preparados --saida dados/comparacao_nova
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-Os testes usam planilhas pequenas com resultados calculados à mão e não dependem de serviços externos. A reprodução da base real é feita com `main.py`; comparar `artefatos_sha256` de duas execuções com mesmas regras e dependências. Datas de execução do manifesto mudam; os CSVs e diagnósticos devem coincidir.
+O manifesto registra versões, hashes da origem, código, configurações e artefatos. O teste cronológico de previsão fica preservado; modelos para o mês seguinte ao fim da base são depois reajustados com todo o histórico. Setembro/2026 não é uma previsão futura em relação à data de leitura deste trabalho.
 
-## Documentação e pendências
+## Arquivos e métodos
 
-- [Plano de implementação](docs/superpowers/plans/2026-11-20-integrante-1.md)
-- [Métodos, decisões e limites](docs/metodologia.md)
-- [Contrato de dados e integração](docs/contrato_dados.md)
-- [Validação da entrega](docs/validacao.md)
-- [Validação da previsão](docs/validacao_previsao.md)
+| Arquivo | Função |
+| --- | --- |
+| `preprocessing.py` | Importação, normalização, auditoria e quarentena |
+| `series_temporais.py` | Médias mensais e cobertura, sem imputação |
+| `comparacao_mercados.py` | Painel integral, pares em meses comuns, rankings, economias e questão 1 |
+| `sazonalidade.py` | STL, ACF, calendário, consistência anual e questão 2 |
+| `previsao.py`, `avaliacao.py` | Naive, regressão linear, Random Forest, avaliação temporal e questão 3 |
+| `sensibilidade.py` | Duplicatas, pesos da cesta, cobertura e composição de lojas |
+| `relatorio.py` | Relatório coletivo com figuras e exportação HTML |
+| `main.py` | Orquestração, manifesto e preservação dos dados |
+| `config/` | Hipóteses de tratamento e cesta comparativa |
+| `tests/` | Casos controlados com resultados verificáveis e regressões |
 
-Para fechar o trabalho completo ainda faltam: revisão das unidades/nomes/quarentena com a fonte; definição coletiva da cesta, cobertura e períodos; módulos 2–3 e integração conjunta; relatório coletivo, relatórios individuais de extensão e preparação da arguição. O modelo institucional e o prazo não foram fornecidos. Não há dashboard nem base externa nesta etapa.
+Leia [metodologia](docs/metodologia.md) e [contrato](docs/contrato_dados.md). O relatório contém justificativas, resultados e limites de cada questão.
+
+A cesta de cinco itens com quantidades unitárias é um índice comparativo, não uma estimativa do gasto mensal familiar. Códigos SUP_* não identificam lojas reais; a economia exclui deslocamento. A seleção de séries completas é retrospectiva. Resultados não demonstram causalidade nem garantem preços futuros.
+
+## Dados e histórico
+
+`ICB_DADOS_2026.xlsx` é a fonte preservada. `dados/entrega_2026-11-25` é a execução atual completa. `dados/preparados`, `dados/comparacao_integrada` e `dados/analise_previsao` são execuções anteriores preservadas para rastreabilidade; **não são a entrega final atual**. A comparação antiga misturava períodos e foi substituída pela análise atual.
+
+Documentos de auditoria e planos de 20/11 descrevem estados históricos. Consulte `docs/validacao_final.md` para o estado vigente. Não interpretar contagens antigas de testes como validação do checkout atual.
+
+## Entrega acadêmica
+
+O enunciado pede ao menos uma questão completa; o grupo mantém as três planejadas. São necessários relatório coletivo, relatórios individuais conforme modelo e código/bases. Cada aluno deve submeter seu relatório individual e os arquivos de suporte na atividade de EXTENSÃO.
+
+O modelo institucional fornecido está preservado em `docs/modelos/`. A pedido de Luccas, os relatórios individuais não foram elaborados nesta execução. Não há registro inventado de horas, participação comunitária ou submissão. Não é necessário criar dashboard ou fonte externa para cumprir o enunciado fornecido.
+
+## Exportação opcional em PDF
+
+O pipeline gera HTML independente e Markdown. A cópia PDF em `entrega/` foi exportada desse HTML com WeasyPrint 70.0. Para repetir a exportação no ambiente com suporte ao WeasyPrint:
+
+```bash
+uv run --no-project --with-requirements requirements-exportacao.txt weasyprint dados/entrega_2026-11-25/relatorios/relatorio_coletivo.html entrega/relatorio_coletivo.pdf
+```
+
+Alternativamente, abrir o HTML e imprimir como PDF pelo navegador. A conferência do formato aceito na atividade continua a cargo do grupo.

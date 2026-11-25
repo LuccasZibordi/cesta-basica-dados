@@ -52,7 +52,7 @@ def diagnosticar(base: pd.DataFrame, cobertura: pd.DataFrame) -> dict:
             'Repetições exatas são excluídas por hipótese configurável; todas preservadas na auditoria.',
             'Média geral usa mercados disponíveis; mudanças de composição podem afetar a série.',
             'Cobertura usa a janela global e não comprova que a loja esteve ativa durante todo o período.',
-            'Não houve imputação, treinamento de modelos, cálculo de cesta ou conclusão das questões.',
+            'Esta etapa prepara dados sem imputação; resultados dos módulos solicitados estão em analises/.',
         ],
     }
 
@@ -92,10 +92,13 @@ def executar_pipeline(entrada: Path, saida: Path, config: Path, modulos: tuple[s
         'config_sha256': sha256(config),
         'python': platform.python_version(),
         'dependencias': {p: version(p) for p in ['pandas', 'openpyxl', 'numpy']},
-        'codigo_sha256': {nome: sha256(RAIZ / nome) for nome in ['main.py', 'preprocessing.py', 'series_temporais.py']},
+        'codigo_sha256': {p.name: sha256(p) for p in sorted(RAIZ.glob('*.py'))},
+        'configuracoes_sha256': {str(p.relative_to(RAIZ)): sha256(p) for p in sorted((RAIZ/'config').glob('*.json'))},
         'modulos': {},
         'artefatos_sha256': {},
     }
+    if modulos:
+        manifesto['dependencias'].update({p: version(p) for p in ['matplotlib','scikit-learn','statsmodels','Markdown']})
     salvar_json(saida / 'manifesto.json', manifesto)
     try:
         base = tratar_dados(carregar_excel(entrada, regras['aba']), regras)
@@ -126,6 +129,13 @@ def executar_pipeline(entrada: Path, saida: Path, config: Path, modulos: tuple[s
             except Exception as exc:
                 manifesto['modulos'][nome] = {'status': 'falhou', 'erro': f'{type(exc).__name__}: {exc}'}
                 raise
+        if set(modulos) == set(MODULOS):
+            from sensibilidade import executar as executar_sensibilidade
+            from relatorio import gerar
+            manifesto['complementos'] = {'status': 'em_execucao'}
+            executar_sensibilidade(entrada, regras, saida, saida/'analises/sensibilidade')
+            gerar(saida)
+            manifesto['complementos'] = {'status': 'concluido'}
         if sha256(entrada) != origem_hash:
             raise RuntimeError('Arquivo de origem mudou durante a execução.')
         manifesto['artefatos_sha256'] = {

@@ -142,3 +142,41 @@ def test_carregar_series_exige_colunas_do_contrato(tmp_path):
     pd.DataFrame({'mes': ['2024-01-01']}).to_csv(p, index=False)
     with pytest.raises(ValueError, match='ausentes'):
         carregar_series(tmp_path)
+
+
+def test_previsao_futura_reajusta_sem_alterar_avaliacao(monkeypatch):
+    import previsao as modulo
+    from sklearn.linear_model import LinearRegression
+    from sklearn.preprocessing import StandardScaler
+    serie = dividir_serie(serie_sintetica())
+    f = construir_features(serie)
+    train = f.loc[f.conjunto.isin(['treino','validacao'])]
+    test = f.loc[f.conjunto.eq('teste')]
+    scaler = StandardScaler().fit(train[modulo.FEATURES].to_numpy())
+    expected = LinearRegression().fit(scaler.transform(train[modulo.FEATURES].to_numpy()),train.preco_medio).predict(scaler.transform(test[modulo.FEATURES].to_numpy()))
+    fits = []
+    class LinearRegistrada(LinearRegression):
+        def fit(self,X,y,**kwargs):
+            fits.append(len(y))
+            return super().fit(X,y,**kwargs)
+    monkeypatch.setattr(modulo,'LinearRegression',LinearRegistrada)
+    previsoes,proximo,_ = modulo.ajustar_e_prever(serie)
+    assert np.allclose(previsoes.loc[previsoes.modelo.eq('linear'),'preco_previsto'],expected)
+    assert fits == [30,36]
+    assert proximo.treinado_ate.eq(pd.Timestamp('2026-08-01')).all()
+
+
+def test_referencia_perfeita_nao_divide_por_zero():
+    tabela=pd.DataFrame({'produto':['Arroz']*3,'modelo':['naive','linear','rf'],
+                        'mae':[0.,0.,1.],'rmse':[0.,0.,1.],'mape':[0.,0.,10.]})
+    r=comparar_com_naive(tabela).set_index('modelo')
+    assert r.loc['naive','melhora_sobre_naive_pct']==0
+    assert pd.isna(r.loc['rf','melhora_sobre_naive_pct'])
+
+
+def test_carregar_series_recusa_mistura_de_unidades(tmp_path):
+    base=serie_sintetica().assign(preco_medio=10.)
+    outra=base.assign(unidade='L',unidade_status='confirmada',preco_medio=100.)
+    pd.concat([base,outra],ignore_index=True).to_csv(tmp_path/'series_geral.csv',index=False)
+    with pytest.raises(ValueError,match='unidade'):
+        carregar_series(tmp_path)

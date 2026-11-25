@@ -56,3 +56,11 @@ O código não corrige uma célula pontualmente por suposição. Quando a fonte 
 ## Limitações para a extensão
 
 Os mercados aparecem como SUP_*, sem endereços ou identificação pública. Não é possível indicar lojas reais sem documentação/autorização apropriada. Não há pesos de consumo, transporte, inflação, promoções identificadas ou volume de vendas. A aplicação social é potencial: onde/quando comprar e quanto reservar dependem das análises e da comunicação das incertezas. Não inventar interação comunitária, horas ou resultados no relatório individual.
+
+## Análises integradas e sensibilidade (25/11/2026)
+
+A comparação foi corrigida para um painel completo em todos os meses; o corte de 24 meses serve apenas às comparações pareadas adicionais. Os cortes 12/24/36 e peso duplo do arroz são cenários de sensibilidade, não parâmetros escolhidos para favorecer resultados.
+
+O módulo sensibilidade.py reaplica o tratamento mantendo duplicatas e exporta séries alternativas/configuração. Também compara séries de mercados disponíveis com painéis completos específicos de cada produto. Os resultados constam em analises/sensibilidade e no relatório coletivo. Isso documenta impacto sem presumir confirmação dos dados.
+
+Não foram recebidos dicionário da coleta, correção oficial dos nomes genéricos ou confirmação de unidades. Permanecem inferidas; as conclusões são condicionais. Não preencher lacunas por associação nominal não demonstrada.

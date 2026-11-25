@@ -53,9 +53,9 @@ Preços estão em reais por unidade indicada. Não misturar kg, L e unidade. Uni
 - `regras_aplicadas.json`: cópia integral da configuração usada.
 - `manifesto.json`: estado, horários, hashes e dependências. Tempos e caminhos podem variar entre execuções; hashes dos artefatos devem coincidir no mesmo ambiente/regras.
 
-## Interface dos módulos futuros
+## Interface dos módulos analíticos
 
-Criar `comparacao_mercados.py`, `sazonalidade.py` e `previsao.py` na raiz do projeto. Cada módulo implementa:
+`comparacao_mercados.py`, `sazonalidade.py` e `previsao.py` estão implementados na raiz. Cada módulo oferece:
 
 ```python
 from pathlib import Path
@@ -73,6 +73,14 @@ Para executar só um módulo após nova preparação: `python main.py --saida da
 
 Sem `--modulos`, executa apenas preparação. Se um módulo solicitado não existir ou falhar, a execução retorna erro e registra `status: falhou`; os arquivos produzidos antes da falha permanecem para diagnóstico, não representam integração concluída. Não existem placeholders fingindo respostas às três questões.
 
-## Acordos ainda coletivos
+## Decisões técnicas e revisão coletiva
 
-Regra de seleção da cesta/consumo, preço representativo para a questão 1, cobertura mínima e painel de mercados, recortes temporais, critérios de avaliação e confirmação dos nomes/unidades. Este contrato é a proposta técnica implementada por Luccas para os colegas revisarem; não representa aprovação que ainda não ocorreu.
+Cesta unitária de cinco itens, médias mensais, painel integral e comparações pareadas estão implementados e justificados no relatório. A revisão coletiva dessas escolhas e a confirmação documental dos nomes/unidades continuam necessárias; a implementação não comprova aprovação que não foi registrada.
+
+## Entrega integrada atual (25/11/2026)
+
+Com os três módulos, main.py também executa sensibilidade e gera relatorios/relatorio_coletivo.md e .html. Esses complementos constam no manifesto; erro em qualquer etapa impede status concluido. Todas as figuras e tabelas vêm da mesma versão da base.
+
+Comparação: painel integral na janela, pares apenas em meses comuns; sem painel de duas lojas não há ranking global. Questão 2: descrição retrospectiva, não features preditivas. Previsão: teste congelado e reajuste posterior em todo o histórico, documentado por treinado_ate. Pasta atual: dados/entrega_2026-11-25.
+
+Regras propostas foram implementadas como decisões técnicas explicitadas. Confirmação institucional da coleta e participação/horas continuam pendentes. O relatório detalha os limites; docs/pendencias_entrega.md reúne o que depende do grupo.

@@ -1,0 +1,15 @@
+{
+  "status": "validado",
+  "artefatos_com_hash": 113,
+  "tipos_verificados": {
+    "csv": 65,
+    "png": 28,
+    "svg": 3,
+    "json": 11,
+    "html": 1,
+    "md": 6
+  },
+  "links_locais_quebrados": [],
+  "origem_preservada": true,
+  "codigo_e_config_conferem": true
+}

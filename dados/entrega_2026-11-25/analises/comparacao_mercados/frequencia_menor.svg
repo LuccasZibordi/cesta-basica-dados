@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="210" viewBox="0 0 1000 210">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="34" font-size="22" font-family="sans-serif" font-weight="bold">Frequência de menor custo</text>
+<text x="178" y="95" text-anchor="end" font-size="13" font-family="sans-serif">SUP_01</text>
+<rect x="190" y="78" width="720.00" height="20" fill="#2878b5"/>
+<text x="917.00" y="94" font-size="12" font-family="sans-serif">1.00</text>
+<text x="178" y="125" text-anchor="end" font-size="13" font-family="sans-serif">SUP_32</text>
+<rect x="190" y="108" width="0.00" height="20" fill="#2878b5"/>
+<text x="197.00" y="124" font-size="12" font-family="sans-serif">0.00</text>
+<text x="178" y="155" text-anchor="end" font-size="13" font-family="sans-serif">SUP_50</text>
+<rect x="190" y="138" width="0.00" height="20" fill="#2878b5"/>
+<text x="197.00" y="154" font-size="12" font-family="sans-serif">0.00</text>
+<text x="190" y="200" font-size="12" font-family="sans-serif">Fração de meses (empates incluídos)</text>
+</svg>

@@ -1,3 +1,5 @@
+> Documento histórico da preparação do integrante 1 (20/11). Estado integrado atual: [validação final](../../validacao_final.md).
+
 # Dados e integração — integrante 1 (Luccas)
 
 Implementar a parte atribuída a Luccas no Planejamento_PI_Cesta_Basica.pdf: auditoria, tratamento rastreável, séries mensais, integração e reprodução. Fonte original preservada. Não implementar as três questões dos colegas nem inventar conclusões.

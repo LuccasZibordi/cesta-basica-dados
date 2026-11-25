@@ -36,8 +36,15 @@ def test_pipeline_preserva_origem_e_produz_saidas_reproduziveis(tmp_path):
     assert len(pd.read_csv(tmp_path / 'a/series_mercado.csv')) == 2
 
 
-def test_modulo_solicitado_ausente_falha_sem_declarar_conclusao(tmp_path):
+def test_modulo_solicitado_ausente_falha_sem_declarar_conclusao(tmp_path, monkeypatch):
     from main import executar_pipeline
+    import main as pipeline
+    original = pipeline.importlib.import_module
+    def importar(nome, *args, **kwargs):
+        if nome == 'comparacao_mercados':
+            raise ModuleNotFoundError(nome)
+        return original(nome, *args, **kwargs)
+    monkeypatch.setattr(pipeline.importlib, 'import_module', importar)
     with pytest.raises(ModuleNotFoundError):
         executar_pipeline(excel(tmp_path), tmp_path / 'saida', ROOT / 'config/tratamento.json', ('comparacao_mercados',))
     m = json.loads((tmp_path / 'saida/manifesto.json').read_text())
@@ -95,3 +102,10 @@ def test_exportacao_nao_arredonda_ppk_original(tmp_path):
     with (tmp_path / 'saida/base_auditada.csv').open() as f:
         linha = next(csv.DictReader(f))
     assert float(linha['PPK']) == 9.98888888888889
+
+
+def test_manifesto_registra_codigo_e_configuracoes_analiticas(tmp_path):
+    from main import executar_pipeline,sha256
+    m=executar_pipeline(excel(tmp_path),tmp_path/'saida',ROOT/'config/tratamento.json')
+    assert m['codigo_sha256']['previsao.py'] == sha256(ROOT/'previsao.py')
+    assert m['configuracoes_sha256']['config/cesta_comparacao.json'] == sha256(ROOT/'config/cesta_comparacao.json')

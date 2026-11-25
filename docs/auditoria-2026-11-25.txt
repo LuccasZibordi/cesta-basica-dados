@@ -1,0 +1,117 @@
+AUDITORIA DE ADERÊNCIA — 25/11/2026
+
+Veredito: o projeto não corresponde integralmente à entrega prevista. Os três
+módulos existem e executam juntos com dependências suplementadas; ainda há
+pendências metodológicas, documentais e de reprodução.
+
+Escopo: planejamento PDF de quatro páginas em Downloads e enunciado fornecido
+por Luccas nesta sessão. Checkout feat/integrante-1-dados, HEAD 610d43f, árvore
+inicial limpa. Sem alterações de implementação, dependências ou dados originais.
+
+DISTINÇÃO DOS REQUISITOS
+O professor exige ao menos uma questão completa, relatório discutindo questões,
+relatórios individuais conforme modelo e código/bases. O planejamento do grupo
+assume três questões e quatro relatórios individuais. Não exige dashboard nem
+base externa. Não foi disponibilizado o modelo institucional; não é possível
+certificar formato, campos e horas, nem confirmar submissões ou arguição.
+
+1. PREPARAÇÃO — implementada, com decisões ainda preliminares
+Preprocessing, séries, contrato, dados auditados e documentação estão presentes.
+Reprodução confirmou por hash os 11 artefatos preparados: 44.370 válidos,
+1.743 duplicatas e 151 quarentenas. Unidades inferidas, aliases, origem detalhada
+e tratamento de suspeitas ainda aguardam confirmação/revisão documentada.
+Não é necessário inventar correções: registrar evidências e limitações reais.
+
+2. COMPARAÇÃO — resultados presentes, comparabilidade temporal insuficiente
+comparacao_mercados.py:154-171 calcula médias gerais e anuais sobre os meses
+próprios de cada mercado, sem exigir os mesmos meses entre concorrentes.
+Nos resultados: 28 mercados, 28 a 48 meses completos, 25 conjuntos temporais
+distintos e apenas quatro meses comuns aos 28. O planejamento exige períodos
+equivalentes. Comparações mensais e economias pareadas são aproveitáveis;
+ranking global e sua conclusão precisam ser recalculados/controlados no tempo.
+O relatório reconhece a limitação, mas isso não cumpre o critério planejado.
+A estabilidade anual sofre do mesmo problema de meses não coincidentes.
+O código mede frequência top-3; o plano também pede frequência de menor custo.
+A cesta tem cinco itens, 1 kg ou 1 L cada: índice comparativo explícito, não cesta
+mensal de consumo. Justificar escolha e pesos; não apresentar R$28,68 como gasto
+mensal familiar. SUP_* não permite indicar lojas reais. Deslocamento excluído
+está coerente com o planejamento e discutido no texto da questão 1.
+
+3. SAZONALIDADE — código presente, entrega escrita ausente
+sazonalidade.py contém médias móveis, volatilidade, STL robusta em log com
+período 12, ACF e correlação entre anos; exporta calendário, tabelas e figuras.
+Não há seção escrita da questão 2 no repositório, nem rotina que a produza.
+Na execução desta auditoria: 12 produtos, quatro classificados com indício
+pelos limiares do código. Isso não é conclusão validada: é necessário discutir
+consistência anual, poucos ciclos, mudança de composição dos mercados,
+justificativa dos limiares 0,30 e incerteza de recomendações de compra.
+A média móvel centrada é descritiva; não foi observada sendo usada na previsão.
+
+4. PREVISÃO — implementada e reproduzida, discussão a completar
+Naive, linear e RF; lags 1/2/3/12; médias deslocadas 3/6; calendário; treino,
+validação e teste cronológicos. São 24 linhas efetivas de treino após lag 12,
+seis de validação e seis de teste; RF ajustada na validação e refit treino+val.
+Teste a um passo usa preços observados dos meses anteriores do próprio bloco,
+o que é coerente com previsão mensal sequencial, não com prever seis meses
+simultaneamente. Seleção de produtos pelos 48 meses completos é retrospectiva
+e produz viés de sobrevivência, reconhecido no relatório.
+MAPE reproduzido: Naive 7,9283%; linear 8,0590%; RF 9,5342%. Resultado negativo
+frente ao baseline é cientificamente válido, não uma falha do projeto.
+Completar discussão por produto, justificativas dos parâmetros e significado
+do erro para orçamento familiar. A previsão de setembro/2026 usa features até
+agosto, mas linear/RF continuam ajustadas apenas até fevereiro/2026
+(previsao.py:138-169). Isso não vaza futuro nem invalida o teste, mas o produto
+final pode ser reajustado com todo o histórico depois de congelar a avaliação,
+ou essa política de modelo congelado deve ser explicitada. Setembro/2026 é
+futuro em relação à base, não em relação à data desta auditoria.
+
+5. REPRODUÇÃO E TESTES — falhas confirmadas
+A .venv local estava sem matplotlib; suíte não coletava teste_previsao e
+execução conjunta falhava. Isso é estado do ambiente, não ausência dessa
+biblioteca no requirements (ela está declarada).
+Em ambiente isolado instalado apenas de requirements.txt, importar sazonalidade
+falha com ModuleNotFoundError: statsmodels. Essa dependência NÃO está declarada.
+Suplementando statsmodels 0.15.0 em ambiente temporário, suíte completa:
+38 passed, 1 failed. tests/test_main.py:39 presume que comparacao_mercados não
+existe; agora importa o módulo real, cujo fixture não tem os itens necessários,
+e recebe ValueError em vez de ModuleNotFoundError. Corrigir a simulação de
+módulo ausente; não apagar a proteção de falhas.
+Não há testes específicos de comparação ou sazonalidade no checkout.
+Execução conjunta em /tmp/cesta-auditoria-completa-2026-11-25 terminou com
+status concluido para os três módulos e 72 artefatos no manifesto. Isso prova
+que a interface funciona com ambiente suplementado, não que os requisitos de
+instalação do repositório estejam completos.
+Os sete CSVs de comparação e quatro de previsão equivalem aos entregues com
+rtol=atol=1e-10. Alguns hashes/serializações da comparação diferem; não afirmar
+identidade binária universal. Preparação: 11 hashes idênticos.
+Comando usado para a execução suplementada:
+uv run --no-project --with-requirements requirements-dev.txt --with statsmodels python main.py --saida /tmp/cesta-auditoria-completa-2026-11-25 --modulos comparacao_mercados sazonalidade previsao
+A pasta já existe: para repetir, escolher outra saída vazia.
+Manifesto registra hashes dos três módulos de preparação, mas não dos módulos
+analíticos/configuração da cesta; versões analíticas também não são registradas.
+Ampliar proveniência é melhoria recomendada para rigor de reprodução.
+
+6. RELATÓRIOS, EXTENSÃO E DOCUMENTAÇÃO — entrega incompleta
+Há seções separadas das questões 1 e 3. Não foi encontrado relatório coletivo
+consolidado nem os quatro relatórios individuais de extensão no repositório.
+Caso existam fora dele, precisam ser conferidos junto do modelo institucional.
+A utilidade social está motivada, mas deve ser traduzida em interpretação
+acessível, respeitando cesta reduzida, mercados anônimos e incertezas.
+Não inventar contato comunitário, atividades ou horas. O enunciado fornecido
+não permite impor eventos, dashboard ou atividades externas adicionais.
+README contraditório: diz que módulos 2–3 faltam, embora existam, e trata
+integração como futura. Atualizar instruções para a execução dos três módulos.
+Cada aluno deve efetivamente submeter relatório individual e suporte na
+atividade de EXTENSÃO. Isso não é comprovável pela árvore local.
+
+ORDEM SUGERIDA PARA FECHAMENTO
+1) Declarar statsmodels e ajustar teste desatualizado; documentar execução total.
+2) Corrigir comparação temporal e justificar cesta/cobertura; revisar decisões
+   de dados com evidência disponível e registrar limitações não resolvidas.
+3) Escrever questão 2; completar interpretação prática e por produto da questão 3.
+4) Reproduzir artefatos finais e consolidar relatório coletivo das três questões.
+5) Conferir modelo, preparar quatro relatórios individuais verdadeiros, revisar
+   arguição e realizar submissões individuais.
+
+Esta auditoria não implementou correções. Outputs de diagnóstico em /tmp são
+suplementares e temporários; não substituem pacote final de entrega.

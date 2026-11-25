@@ -1,3 +1,5 @@
+> Registro histórico da etapa/branch original. Para a integração atual, consultar [validação final](validacao_final.md).
+
 # Validação — integrante 4 (previsão)
 
 Verificado em 24/11/2026, branch `integrante-4-precos`, Python 3.14.4. Ambiente criado com `python -m venv .venv` e `pip install -r requirements.txt -r requirements-dev.txt`.

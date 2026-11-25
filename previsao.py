@@ -38,7 +38,9 @@ def carregar_series(dados_dir: Path) -> pd.DataFrame:
     faltantes = set(COLUNAS_SERIE) - set(serie.columns)
     if faltantes:
         raise ValueError(f'Colunas obrigatórias ausentes em series_geral.csv: {sorted(faltantes)}')
-    serie['observado'] = serie.observado.astype(bool)
+    if serie.groupby('produto').unidade.nunique(dropna=False).gt(1).any() or serie.unidade.isna().any():
+        raise ValueError('Cada produto deve ter uma única unidade antes da agregação.')
+    serie['observado'] = serie.observado.astype(str).str.lower().eq('true')
     # Um produto pode aparecer com mais de um unidade_status no mesmo mês quando a fonte
     # confirma unidades; uma linha por produto/mês evita duplicar a grade temporal.
     serie['prioridade'] = serie.unidade_status.map(PRIORIDADE_STATUS).fillna(3)
@@ -161,6 +163,11 @@ def ajustar_e_prever(serie: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, t
                 'erro_percentual': abs(erro / y) * 100,
             })
 
+    # A avaliação acima fica congelada. Reajuste operacional com todo o histórico.
+    X_total, y_total = _matriz(features)
+    escala = StandardScaler().fit(X_total)
+    linear = LinearRegression().fit(escala.transform(X_total), y_total)
+    floresta = _rf(parametros).fit(escala.transform(X_total), y_total)
     futuro = _proximo_mes(serie)
     X_proximo = escala.transform(futuro[FEATURES].to_numpy(dtype=float))
     estimativas = {
@@ -170,7 +177,8 @@ def ajustar_e_prever(serie: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, t
     }
     proximo = pd.DataFrame([
         {'produto': futuro.produto.iloc[0], 'unidade': futuro.unidade.iloc[0],
-         'mes': futuro.mes.iloc[0], 'modelo': modelo, 'preco_previsto': valor}
+         'mes': futuro.mes.iloc[0], 'modelo': modelo, 'preco_previsto': valor,
+         'treinado_ate': serie.mes.max()}
         for modelo, valor in estimativas.items()
     ])
     return pd.DataFrame(linhas), proximo, parametros
@@ -259,7 +267,7 @@ def _relatorio(previsoes: pd.DataFrame, metricas_por_modelo: pd.DataFrame,
         'medida comparável entre produtos.', '',
         '## Conclusão', '',
         f'No período de teste, o modelo **{melhor_geral}** apresentou o menor erro relativo médio. '
-        + ('Os modelos avaliados superaram a referência Naive em média.' if melhor_geral != 'naive'
+        + ('Ao menos um modelo superou a referência Naive em média.' if melhor_geral != 'naive'
            else 'Nenhum modelo superou a referência Naive em média, o que indica pouco ganho previsível '
                 'com as variáveis utilizadas.'),
         'A previsão do próximo mês é um ponto estimado; o erro histórico do modelo é a medida de incerteza '
@@ -270,6 +278,21 @@ def _relatorio(previsoes: pd.DataFrame, metricas_por_modelo: pd.DataFrame,
     ]
     for _, linha in proximo.iterrows():
         linhas.append(f"| {linha.produto} | {linha.unidade} | {linha.mes:%Y-%m} | {linha.modelo} | {linha.preco_previsto:.4f} |")
+    linhas += ['', '## Interpretação por produto', '',
+               '| Produto | Menor MAPE no teste | MAPE (%) | MAE (R$/unidade) |',
+               '| --- | --- | ---: | ---: |']
+    for produto, g in metricas_por_modelo.groupby('produto'):
+        melhor = g.loc[g.mape.idxmin()]
+        linhas.append(f'| {produto} | {melhor.modelo} | {melhor.mape:.2f} | {melhor.mae:.4f} |')
+    linhas += ['', 'O vencedor por produto é uma descrição posterior do teste, não uma seleção validada para implantação. Não selecionar hiperparâmetros por essas vitórias.',
+               'Os lags 1–3 capturam persistência recente; lag 12 representa o mesmo mês do ano anterior. Médias 3/6 suavizam ruído; seno/cosseno preservam continuidade do calendário. São escolhas parcimoniosas para apenas 48 meses.',
+               'Grid RF: 100/300 árvores, profundidade livre/5, mínimo 1/3 observações por folha. A validação temporal escolhe MAPE; profundidade e tamanho de folha controlam complexidade. Há poucos exemplos para modelos flexíveis.',
+               'Teste: previsões sequenciais a um passo com preços reais conhecidos até o mês anterior, sem reajustar pesos dentro do bloco. Não é previsão simultânea de seis meses.',
+               'Depois de congelar métricas, modelos operacionais são reajustados em todo o histórico com os mesmos hiperparâmetros. A coluna treinado_ate documenta o corte. O mês seguinte é relativo ao fim da base, não à data em que este relatório é lido.',
+               'Aplicação: para uma quantidade explicitada q de um único produto, q × MAE ilustra a magnitude média histórica do erro monetário. Isso não é margem garantida nem intervalo de confiança; combinar erros de produtos exige avaliar a cesta conjunta. Sem consumo familiar informado não estimamos orçamento mensal.',
+               '![Comparação dos modelos](comparacao_modelos.png)',
+               '![Preços reais e previstos](precos_reais_vs_previstos.png)',
+               '![Erros no tempo](erros_no_tempo.png)']
     linhas += [
         '',
         '## Limitações', '',
@@ -286,6 +309,8 @@ def _relatorio(previsoes: pd.DataFrame, metricas_por_modelo: pd.DataFrame,
 def executar(dados_dir: Path, saida_dir: Path) -> None:
     dados_dir, saida_dir = Path(dados_dir), Path(saida_dir)
     saida_dir.mkdir(parents=True, exist_ok=True)
+    if any(saida_dir.iterdir()):
+        raise FileExistsError('Saída não vazia.')
     geral = carregar_series(dados_dir)
     selecionadas = selecionar_produtos(geral)
 

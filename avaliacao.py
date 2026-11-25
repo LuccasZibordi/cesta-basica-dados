@@ -37,7 +37,8 @@ def comparar_com_naive(tabela: pd.DataFrame) -> pd.DataFrame:
     comparacao = tabela.copy()
     referencia = comparacao.loc[comparacao.modelo.eq('naive')].set_index('produto').mape
     comparacao['melhora_sobre_naive_pct'] = [
-        0.0 if modelo == 'naive' else float((referencia[produto] - mape) / referencia[produto] * 100)
+        0.0 if modelo == 'naive' else (float((referencia[produto] - mape) / referencia[produto] * 100)
+                                         if referencia[produto] > 0 else np.nan)
         for produto, modelo, mape in zip(comparacao.produto, comparacao.modelo, comparacao.mape)
     ]
     return comparacao
