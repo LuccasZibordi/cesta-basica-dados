@@ -1,6 +1,6 @@
 # Cesta básica — PI e extensão
 
-Análise comparativa e preditiva de preços para planejamento financeiro familiar. Esta entrega implementa a parte do **integrante 1 (Luccas)**: diagnóstico, tratamento rastreável, séries mensais e execução centralizada.
+Análise comparativa e preditiva de preços para planejamento financeiro familiar. O projeto reúne a preparação de dados do integrante 1 e a comparação de mercados do integrante 2.
 
 ## Estado da entrega
 
@@ -37,6 +37,8 @@ O programa informa sucesso ou retorna código 1 em caso de falha. O `manifesto.j
 | --- | --- |
 | `preprocessing.py` | Leitura, validação, normalização, classificação e rastreabilidade |
 | `series_temporais.py` | Agregação por mês/mercado/produto, série geral e cobertura |
+| `comparacao_mercados.py` | Custos de cesta, rankings, compra distribuída, gráficos e texto da questão 1 |
+| `config/cesta_comparacao.json` | Produtos, quantidades da cesta de referência e mínimo de meses completos |
 | `main.py` | Execução, exportação, diagnóstico e integração opcional |
 | `previsao.py` | Previsão a um mês: features, modelos cronológicos e saídas (integrante 4) |
 | `avaliacao.py` | MAE, RMSE, MAPE e comparação com o Naive (integrante 4) |
@@ -49,17 +51,27 @@ Compartilhe a pasta de dados inteira, junto de [contrato de dados](docs/contrato
 
 | Integrante | Arquivos iniciais |
 | --- | --- |
-| 2 — comparação | `series_mercado.csv`, `cobertura.csv`, `base_tratada.csv` |
+| 2 — comparação | `series_mercado.csv`, `cobertura.csv`, `base_tratada.csv`; análise implementada em `comparacao_mercados.py` |
 | 3 — sazonalidade | `series_geral.csv` ou `series_mercado.csv`, `cobertura.csv` |
 | 4 — previsão | `series_geral.csv`; módulo entregue, saídas em `dados/analise_previsao` |
 
 Não somar preços unitários para calcular uma cesta sem definir quantidades consumidas. Não comparar cestas incompletas. Não preencher lacunas com zero. Todos os preços são nominais.
 
-Quando os módulos reais existirem na raiz e seguirem o contrato:
+Para executar a comparação de mercados integrada ao fluxo principal:
 
 ```bash
-python main.py --saida dados/integrada --modulos comparacao_mercados sazonalidade previsao
+python main.py --saida dados/comparacao_integrada --modulos comparacao_mercados
 ```
+
+Os módulos de sazonalidade e previsão serão integrados quando forem entregues pelos respectivos integrantes.
+
+Para reproduzir somente a comparação usando a base já preparada, escolha uma pasta de saída nova:
+
+```bash
+python comparacao_mercados.py --dados dados/preparados --saida dados/analise_comparacao_nova
+```
+
+O relatório da questão 1 fica em `dados/comparacao_integrada/analises/comparacao_mercados/questao_1_comparacao.md`. Os resultados refletem uma cesta comparativa unitária, mercados identificados apenas por códigos e unidades ainda inferidas; descreva esses limites ao apresentar as conclusões.
 
 ## Verificar
 
