@@ -1,0 +1,72 @@
+{
+  "versao": 1,
+  "aba": "ACUMUL_DESAGREG",
+  "remover_duplicatas": true,
+  "tolerancia_ppk": 0.011,
+  "preco_unitario_minimo_suspeito": 0.1,
+  "preco_unitario_maximo_suspeito": 999,
+  "aliases": {
+    "Carne Coxão Mole": "Carne Bovina Coxão Mole",
+    "Carne Acem": "Carne Bovina Acem",
+    "Carne Pernil": "Carne Suína Pernil",
+    "Pernil": "Carne Suína Pernil"
+  },
+  "nomes_ambiguos": [
+    "Farinha",
+    "Macarrão",
+    "Pão"
+  ],
+  "unidades": {
+    "Carne Bovina Coxão Mole": "kg",
+    "Carne Bovina Acem": "kg",
+    "Carne Bovina Músculo": "kg",
+    "Carne Bovina Patinho": "kg",
+    "Carne Bovina Alcatra": "kg",
+    "Carne Suína Pernil": "kg",
+    "Frango Peito": "kg",
+    "Frango Sobrecoxa": "kg",
+    "Manteiga": "kg",
+    "Arroz": "kg",
+    "Café": "kg",
+    "Pão Francês": "kg",
+    "Açúcar": "kg",
+    "Farinha de Trigo": "kg",
+    "Feijão": "kg",
+    "Banana Prata": "kg",
+    "Banana Nanica": "kg",
+    "Tomate": "kg",
+    "Batata": "kg",
+    "Macarrão com Ovos": "kg",
+    "Leite": "L",
+    "Óleo": "L",
+    "Ovo": "unidade"
+  },
+  "unidades_confirmadas": [],
+  "quantidades_suspeitas": {
+    "Manteiga": [
+      3
+    ],
+    "Açúcar": [
+      3
+    ],
+    "Farinha de Trigo": [
+      3
+    ],
+    "Feijão": [
+      3
+    ],
+    "Tomate": [
+      20
+    ],
+    "Ovo": [
+      1
+    ]
+  },
+  "justificativas": {
+    "duplicatas": "Hipótese operacional: oito campos idênticos representam repetição da coleta. Primeira ocorrência mantida; demais exportadas. Desativar remover_duplicatas para sensibilidade.",
+    "aliases": "Equivalências semânticas propostas a partir dos nomes e continuidade temporal; revisar com a fonte. Nomes genéricos não são fundidos.",
+    "unidades": "Inferidas do produto e tamanho da embalagem; não confirmadas por dicionário da coleta. PPK não é universalmente R$/kg.",
+    "suspeitas": "Regras fixas e conservadoras motivadas pela auditoria: limites inclusivos 0.10/999 e combinações produto-quantidade enumeradas. Quarentena significa revisão pendente, não erro comprovado. Não detecta todos os possíveis erros. Reavaliar impacto antes de conclusões.",
+    "ppk": "Comparar com Preco/Quantidade à tolerância absoluta 0.011; não corrigir divergência por suposição. Quando coerente, usar razão sem arredondar na agregação."
+  }
+}

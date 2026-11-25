@@ -1,0 +1,48 @@
+{
+  "status": "concluido",
+  "inicio_utc": "2026-11-24T20:07:29.427552+00:00",
+  "entrada": "/Users/jv/Documents/Faculdade/6-Semestre/PI - Sistemas Inteligentes e Aprendizado de máquinas/Projeto3/cesta-basica-dados/ICB_DADOS_2026.xlsx",
+  "entrada_sha256": "d92c1a8b2e3273dc90a2f6c07c1620940ec83f114ab7548f9e8aaf45f96fa836",
+  "config_sha256": "fd0c860fdd31df5ea0b4b9421a4a86dd10c01f085727abb4f3f26736f90f7360",
+  "python": "3.12.14",
+  "dependencias": {
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5",
+    "numpy": "2.3.5"
+  },
+  "codigo_sha256": {
+    "main.py": "73057dcaff65b579bd9c52f7ac3974f6f1ced475bcfadb74efe4a9186f78579e",
+    "preprocessing.py": "7c4e0bd46de1c26c6845a70dc61779847802c628d6e5dba52d1b71fa2c019fec",
+    "series_temporais.py": "65ec2c7509657c3da631185f2c764992209f23e27e95da6daeabe9b4e09e5e97"
+  },
+  "modulos": {
+    "comparacao_mercados": {
+      "status": "concluido"
+    }
+  },
+  "artefatos_sha256": {
+    "analises/comparacao_mercados/cesta_utilizada.csv": "f76b3c85dd6d284b88d6bfd04232c95cf9d29162e78a150aa75df220a6f58fbc",
+    "analises/comparacao_mercados/compra_distribuida_mensal.csv": "62d09e46c36f678a7fab179ad56083218d9072b038efd61f22b87804b34433d5",
+    "analises/comparacao_mercados/custos_mensais_cesta.csv": "7de75bb9bbe221ec1fde12c9ed34c94cef8b76eec3d306015b692beb30ad42fd",
+    "analises/comparacao_mercados/estabilidade_anual.csv": "1f119fd1d4199f6aecf35562925a27fc8c90f158bf28510da5ce553b919d7961",
+    "analises/comparacao_mercados/estabilidade_top3.svg": "757987af6e60235da974aac9be707e415942c8e2b176744bcc42c081bf431603",
+    "analises/comparacao_mercados/precos_itens_cesta.csv": "09328c9da2e81f3212255d09891238a4c1435d1b3bfeedebabc8c59a09c1a3ff",
+    "analises/comparacao_mercados/questao_1_comparacao.md": "8a07181bf874a59700c73850d70b0928295e906e13a4620e4d9d614ed550c61c",
+    "analises/comparacao_mercados/ranking_anual.csv": "60ddccb3e506c71f932fa1932c9a2c1c67dc4def81734ce970ce9ca8ce7c7fc7",
+    "analises/comparacao_mercados/ranking_custo_medio.svg": "02007b05ee1432e224818d05d7d7228eb2d4da7ea466ddbec40ede3dd68287b0",
+    "analises/comparacao_mercados/ranking_mercados.csv": "f459e5e2b2991abfb3a166299ea6cc12927c4218200425c4fed000730c724f71",
+    "analises/comparacao_mercados/trajetoria_custos.svg": "039e5ce2f6d66cfec9064f5654893e69d3d09145bfe05d10566397954699829a",
+    "base_auditada.csv": "c4130ab3d755b95d0a7b7446639a7a5e4b7e99463526981858082e05f2628972",
+    "base_duplicatas.csv": "42d78c1ff9e1b38cc1dfaadadd3e703f5f6470e9ee7eb7efe09aa77202af41ce",
+    "base_quarentena.csv": "1836dc8f3f5282368bd4087cfc2e1cf79a5b0d0c71fd2d0de64496206824f03c",
+    "base_tratada.csv": "53df0b5302a73c2f97e7686f3036cb0be0c08ff1b63c642b411d73eb3c6e14a6",
+    "cobertura.csv": "78ea01e2e5747001cb6f5c99511eaf3881d20a9fdb335e7185ae2341c31ff4f3",
+    "cobertura_mensal.csv": "51ca6b006037f15082c8c6c8b88006844a2ab23f529e682c695bf5964db35815",
+    "diagnostico.json": "5b5dcc3fb908d76aafafba4017993a698a232b6c982ae27889c0a3f250578372",
+    "diagnostico.md": "a44678dd6d536a44f024973ef6048c7c9e0af342510c7c154d7c983bb58c576a",
+    "regras_aplicadas.json": "8dba262e0077406b7a91b0a37d535d7624300fa2f8d7352acea7a45f44340377",
+    "series_geral.csv": "13d3cd5cce6ec70740e424a3e130ac1db18d9d99698afad54ea18d7d248822b6",
+    "series_mercado.csv": "7c457b14178d1744dacf03b53904bd9062f8afdae4999aebb7b3caaaae5530fa"
+  },
+  "fim_utc": "2026-11-24T20:07:31.410347+00:00"
+}
