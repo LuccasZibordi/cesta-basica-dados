@@ -1,6 +1,19 @@
 # Análise comparativa e preditiva de preços da cesta básica
 
-Relatório coletivo de PI e extensão — versão técnica gerada a partir dos dados. Identificação acadêmica do grupo e dados institucionais devem ser conferidos antes de submeter.
+Relatório coletivo de PI e extensão — 2º semestre de 2026.
+
+**Instituição:** PUC-Campinas · Escola Politécnica  
+**Curso:** Engenharia de Computação  
+**Turma:** 218040  
+**Disciplina:** Sistemas Inteligentes e Aprendizado de Máquina  
+**Professor:** Fernando Soares de Aguiar Neto
+
+| Integrante | RA |
+| --- | --- |
+| Luccas Gomes Zibordi | 24007138 |
+| Bruno Vinicius Selingardi | 24004238 |
+| João Vitor Bombo Guimarães | 24018551 |
+| Vinícius de Moraes Chaves | 24007303 |
 
 ## Introdução e aplicação esperada
 
@@ -336,7 +349,7 @@ O manifesto registra versões, hashes do código/configurações/origem e artefa
 
 ## Referências e fontes
 
-- Enunciado do professor fornecido por Luccas e Planejamento_PI_Cesta_Basica.pdf (quatro páginas), consultados em 25/11/2026. Modelo institucional dos relatórios individuais recebido em 25/11/2026 e preservado em docs/modelos; elaboração individual adiada a pedido de Luccas.
+- Enunciado do professor fornecido por Luccas e Planejamento_PI_Cesta_Basica.pdf (quatro páginas), consultados em 25/11/2026. Modelo institucional dos relatórios individuais recebido em 25/11/2026 e preservado em docs/modelos. Cada integrante elabora e submete seu próprio relatório de extensão, acompanhado dos arquivos de suporte.
 
 - ICB_DADOS_2026.xlsx, base fornecida ao grupo, identificação detalhada da instituição/coleta pendente.
 

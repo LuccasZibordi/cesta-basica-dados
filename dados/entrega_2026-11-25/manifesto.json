@@ -20,7 +20,7 @@
     "main.py": "7fb56cb98837eb11945d96cb89d9bb49f881bcf702e10877ddbbb6ae15067c7f",
     "preprocessing.py": "7c4e0bd46de1c26c6845a70dc61779847802c628d6e5dba52d1b71fa2c019fec",
     "previsao.py": "3adc4cad86a9471b581e1a27a5efd23d5f340eb7eaa5119cb887ec04e09cdc58",
-    "relatorio.py": "c9024431a6f0758b5b4cd3497ad3f98c84a2341a7efe1673e09a687efe9d7550",
+    "relatorio.py": "6144ce4d33e36b57d313af6e1d4990d7803a3edf5e42cdbfebe77c825b466225",
     "sazonalidade.py": "fc2f2098d7efd7f6c5e8fbb3e41a146844bf38ee5ed620738972bcab10894088",
     "sensibilidade.py": "5afcaa3e5daa46a81c9cce638e8ec4caa47e2c754cee2ad66c3b0c3636f3c7de",
     "series_temporais.py": "65ec2c7509657c3da631185f2c764992209f23e27e95da6daeabe9b4e09e5e97"
@@ -150,13 +150,26 @@
     "diagnostico.json": "2e84a32f0be0021c5145f1b20a47feb278239a75f5fa3840119068c8007dc331",
     "diagnostico.md": "548f5c333c4bc0950861fccfc4545df7b9f5a7b60de01cd4a34215c73ac68ec7",
     "regras_aplicadas.json": "8dba262e0077406b7a91b0a37d535d7624300fa2f8d7352acea7a45f44340377",
-    "relatorios/relatorio_coletivo.html": "832ff9fc265fc4e1608d2892aeda5ab4d3c818a6105d73bbfa4a5966e8206b33",
-    "relatorios/relatorio_coletivo.md": "589ed2ba7c0a5e3b307dd7ea3c169b33f3ff4dd31f28661ec70af1efef596c64",
+    "relatorios/relatorio_coletivo.html": "ad01a916280c99b9703d8e18058d194d558ad260edf6d6585cb70f2c1e35ac83",
+    "relatorios/relatorio_coletivo.md": "34494953dbf56d770870ef6d64068d97480512cf636fa9c5b10c3baaaab5542f",
     "series_geral.csv": "13d3cd5cce6ec70740e424a3e130ac1db18d9d99698afad54ea18d7d248822b6",
     "series_mercado.csv": "7c457b14178d1744dacf03b53904bd9062f8afdae4999aebb7b3caaaae5530fa"
   },
   "complementos": {
     "status": "concluido"
   },
-  "fim_utc": "2026-11-25T19:14:23.740812+00:00"
+  "fim_utc": "2026-11-25T19:14:23.740812+00:00",
+  "revisoes_editoriais": [
+    {
+      "data": "2026-11-26",
+      "descricao": "Identificação acadêmica e atualização do texto sobre relatórios individuais; sem reexecução das análises.",
+      "codigo_anterior": {
+        "relatorio.py": "c9024431a6f0758b5b4cd3497ad3f98c84a2341a7efe1673e09a687efe9d7550"
+      },
+      "artefatos_anteriores": {
+        "relatorios/relatorio_coletivo.md": "589ed2ba7c0a5e3b307dd7ea3c169b33f3ff4dd31f28661ec70af1efef596c64",
+        "relatorios/relatorio_coletivo.html": "832ff9fc265fc4e1608d2892aeda5ab4d3c818a6105d73bbfa4a5966e8206b33"
+      }
+    }
+  ]
 }

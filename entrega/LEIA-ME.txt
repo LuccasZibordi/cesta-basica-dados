@@ -1,2 +1,4 @@
-Pacote de suporte técnico: cesta-basica-suporte.zip. Relatório coletivo: relatorio_coletivo.pdf (38 páginas).
-Relatórios individuais não elaborados, por solicitação de Luccas. Modelo guardado em docs/modelos. Conferir docs/pendencias_entrega.md antes de submeter.
+Pacote vigente: cesta-basica-entrega-final-2026-11-26.zip.
+Relatório coletivo final: relatorio_coletivo.pdf (40 páginas).
+O ZIP inclui coletivo, código, bases, testes, documentação e manifesto SHA-256. Não inclui relatórios individuais, modelos em branco ou backups.
+O seu relatório individual será submetido em outra tarefa. Não envie os ZIPs antigos.

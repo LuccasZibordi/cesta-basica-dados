@@ -8,7 +8,7 @@ CSV UTF-8, separador vírgula, decimal ponto, datas `YYYY-MM-DD`, ausência como
 from pathlib import Path
 import pandas as pd
 
-dados_dir = Path('dados/preparados')
+dados_dir = Path('dados/entrega_2026-11-26')
 serie = pd.read_csv(dados_dir / 'series_mercado.csv', parse_dates=['mes'])
 ```
 
@@ -77,10 +77,10 @@ Sem `--modulos`, executa apenas preparação. Se um módulo solicitado não exis
 
 Cesta unitária de cinco itens, médias mensais, painel integral e comparações pareadas estão implementados e justificados no relatório. A revisão coletiva dessas escolhas e a confirmação documental dos nomes/unidades continuam necessárias; a implementação não comprova aprovação que não foi registrada.
 
-## Entrega integrada atual (25/11/2026)
+## Entrega integrada atual (26/11/2026)
 
 Com os três módulos, main.py também executa sensibilidade e gera relatorios/relatorio_coletivo.md e .html. Esses complementos constam no manifesto; erro em qualquer etapa impede status concluido. Todas as figuras e tabelas vêm da mesma versão da base.
 
-Comparação: painel integral na janela, pares apenas em meses comuns; sem painel de duas lojas não há ranking global. Questão 2: descrição retrospectiva, não features preditivas. Previsão: teste congelado e reajuste posterior em todo o histórico, documentado por treinado_ate. Pasta atual: dados/entrega_2026-11-25.
+Comparação: painel integral na janela, pares apenas em meses comuns; sem painel de duas lojas não há ranking global. Questão 2: descrição retrospectiva, não features preditivas. Previsão: teste congelado e reajuste posterior em todo o histórico, documentado por treinado_ate. Pasta atual: dados/entrega_2026-11-26.
 
-Regras propostas foram implementadas como decisões técnicas explicitadas. Confirmação institucional da coleta e participação/horas continuam pendentes. O relatório detalha os limites; docs/pendencias_entrega.md reúne o que depende do grupo.
+Regras propostas foram implementadas como decisões técnicas explicitadas. As hipóteses sobre a coleta continuam explicitadas no relatório; atividades e horas são tratadas nos relatórios individuais, fora do pacote. O relatório detalha os limites; docs/pendencias_entrega.md reúne o que depende do grupo.

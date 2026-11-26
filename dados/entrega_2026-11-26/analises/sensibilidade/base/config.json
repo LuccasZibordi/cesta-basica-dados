@@ -1,0 +1,32 @@
+{
+  "descricao": "Cesta comparativa de referência: uma unidade-base de cada produto (1 kg ou 1 L). É um índice de comparação de preços, não uma estimativa de consumo mensal familiar.",
+  "criterio_cobertura": "Painel principal: cesta completa em toda a janela. Complemento: pares com pelo menos 24 meses comuns, sem ranking global.",
+  "meses_minimos_por_mercado": 24,
+  "itens": [
+    {
+      "produto": "Arroz",
+      "unidade": "kg",
+      "quantidade": 1.0
+    },
+    {
+      "produto": "Açúcar",
+      "unidade": "kg",
+      "quantidade": 1.0
+    },
+    {
+      "produto": "Feijão",
+      "unidade": "kg",
+      "quantidade": 1.0
+    },
+    {
+      "produto": "Leite",
+      "unidade": "L",
+      "quantidade": 1.0
+    },
+    {
+      "produto": "Óleo",
+      "unidade": "L",
+      "quantidade": 1.0
+    }
+  ]
+}

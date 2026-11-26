@@ -1,0 +1,27 @@
+produto,unidade,unidade_status,meses_janela,meses_com_preco,serie_completa,ciclos_anuais,stl_aplicavel
+Arroz,kg,inferida,48,48,True,4.0,True
+Açúcar,kg,inferida,48,48,True,4.0,True
+Banana Nanica,kg,inferida,48,48,True,4.0,True
+Banana Prata,kg,inferida,48,48,True,4.0,True
+Batata,kg,inferida,48,48,True,4.0,True
+Café,kg,inferida,48,48,True,4.0,True
+Carne Bovina Acem,kg,inferida,48,18,False,4.0,False
+Carne Bovina Alcatra,kg,inferida,48,2,False,4.0,False
+Carne Bovina Coxão Mole,kg,inferida,48,48,True,4.0,True
+Carne Bovina Músculo,kg,inferida,48,1,False,4.0,False
+Carne Bovina Patinho,kg,inferida,48,2,False,4.0,False
+Carne Suína Pernil,kg,inferida,48,18,False,4.0,False
+Farinha,desconhecida,pendente,48,0,False,4.0,False
+Farinha de Trigo,kg,inferida,48,47,False,4.0,False
+Feijão,kg,inferida,48,48,True,4.0,True
+Frango Peito,kg,inferida,48,18,False,4.0,False
+Frango Sobrecoxa,kg,inferida,48,18,False,4.0,False
+Leite,L,inferida,48,48,True,4.0,True
+Macarrão,desconhecida,pendente,48,0,False,4.0,False
+Macarrão com Ovos,kg,inferida,48,17,False,4.0,False
+Manteiga,kg,inferida,48,48,True,4.0,True
+Ovo,unidade,inferida,48,18,False,4.0,False
+Pão,desconhecida,pendente,48,0,False,4.0,False
+Pão Francês,kg,inferida,48,47,False,4.0,False
+Tomate,kg,inferida,48,48,True,4.0,True
+Óleo,L,inferida,48,48,True,4.0,True

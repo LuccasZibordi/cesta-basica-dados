@@ -190,6 +190,7 @@ def executar(dados_dir: Path, saida_dir: Path) -> None:
         'Comparamos perfis anuais sem tendência por correlação, exigindo ao menos seis meses comuns por par de anos. Anos parciais são identificados nas tabelas. Indício exploratório: força sazonal e correlação média ≥0,30. Esses cortes buscam sinais não triviais, são escolhas operacionais e não níveis de significância; a sensibilidade é apresentada abaixo.', '',
         '## Resultados e avaliação',
         f'{len(resumo)} produtos completos analisados. A classificação e meses extremos descrevem esta amostra, não recomendações universais.',
+        '',
         '| Produto | Força sazonal | Correlação entre anos | Indício | Mês de menor componente |',
         '| --- | ---: | ---: | --- | --- |',
     ]

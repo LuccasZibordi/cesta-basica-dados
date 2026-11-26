@@ -1,0 +1,29 @@
+{
+  "data": "2026-11-26",
+  "status": "validado",
+  "testes": 56,
+  "testes_resultado": "56 passed em 13.18s",
+  "execucoes_completas_finais": 2,
+  "artefatos_identicos_reproducao": 113,
+  "tipos_verificados": {
+    ".csv": 65,
+    ".json": 10,
+    ".svg": 3,
+    ".md": 6,
+    ".png": 28,
+    ".html": 1
+  },
+  "tabelas_html": 9,
+  "links_locais_quebrados": [],
+  "arquivos_analiticos_inalterados_desde_25_11": 106,
+  "origem_preservada": true,
+  "codigo_e_config_conferem": true,
+  "observacao": "Correção de duas tabelas Markdown, sem alteração de resultados numéricos. Reprodução em diretório independente; manifesto excluído da igualdade por conter horários e caminhos.",
+  "pdf": {
+    "paginas": 40,
+    "tabelas_html": 9,
+    "paginas_vazias": 0,
+    "identificacao_conferida": true,
+    "revisao_visual": "Documento inspecionado em mosaicos e tabelas corrigidas ampliadas."
+  }
+}

@@ -86,6 +86,7 @@ def executar(entrada: Path, regras: dict, dados_dir: Path, saida_dir: Path) -> N
       'Análises retrospectivas, sem selecionar o cenário que favorece um modelo. Alteramos uma decisão por vez.',
       'Duplicatas: mantemos todas as repetições e reaplicamos as demais regras. As séries alternativas e a configuração estão nesta pasta. A quarentena continua ativa.',
       'Composição: para cada produto, comparamos a média dos mercados disponíveis com a média de lojas observadas em todos os meses. São painéis específicos por produto; itens sem loja completa não têm comparação. Isso mede sensibilidade, não estima o efeito causal de entrada/saída de lojas.',
+      '',
       '| Produto | Meses pareados | Diferença absoluta média (%) — composição |','| --- | ---: | ---: |']
     linhas += [f'| {x.produto} | {x.meses_comuns} | {x.diferenca_absoluta_media_pct:.3f} |' for x in composicao.itertuples()]
     linhas += ['',f'Duplicatas: maior diferença absoluta média percentual por produto = {dup.diferenca_absoluta_media_pct.max():.3f}%. Veja impacto_duplicatas.csv.',

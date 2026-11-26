@@ -1,2 +1,2 @@
-40306f53a5b50e84c8e8ec03418a218a7b0b8a519952b8ff2847523459975c30  cesta-basica-suporte.zip
-42ade628e83e2d846f149e2d2558599cfe930427af1881df09baafc2f90a96cd  relatorio_coletivo.pdf
+55ff51bd641712ca568337915af22aa893acc6d7d982de2da110ce4a2bf338c4  cesta-basica-entrega-final-2026-11-26.zip
+c23165f9af32c3aac20df437fa186b46c9743a7dc9c81ad3eb7c6f53260bdd42  relatorio_coletivo.pdf

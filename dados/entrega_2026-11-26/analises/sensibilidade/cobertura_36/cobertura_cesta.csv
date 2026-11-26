@@ -1,0 +1,52 @@
+mercado,meses_completos,meses_janela,painel_integral,elegivel_pares,motivo
+ALT_26,1,48,False,False,cesta ausente em parte da janela
+ALT_28,1,48,False,False,cesta ausente em parte da janela
+ALT_35,1,48,False,False,cesta ausente em parte da janela
+ALT_48,1,48,False,False,cesta ausente em parte da janela
+ALT_49,1,48,False,False,cesta ausente em parte da janela
+SUP_01,48,48,True,True,painel integral
+SUP_02,1,48,False,False,cesta ausente em parte da janela
+SUP_03,1,48,False,False,cesta ausente em parte da janela
+SUP_04,28,48,False,False,cesta ausente em parte da janela
+SUP_05,1,48,False,False,cesta ausente em parte da janela
+SUP_06,44,48,False,True,cesta ausente em parte da janela
+SUP_07,43,48,False,True,cesta ausente em parte da janela
+SUP_08,31,48,False,False,cesta ausente em parte da janela
+SUP_09,1,48,False,False,cesta ausente em parte da janela
+SUP_10,2,48,False,False,cesta ausente em parte da janela
+SUP_11,43,48,False,True,cesta ausente em parte da janela
+SUP_12,34,48,False,False,cesta ausente em parte da janela
+SUP_13,44,48,False,True,cesta ausente em parte da janela
+SUP_14,1,48,False,False,cesta ausente em parte da janela
+SUP_15,45,48,False,True,cesta ausente em parte da janela
+SUP_16,44,48,False,True,cesta ausente em parte da janela
+SUP_17,45,48,False,True,cesta ausente em parte da janela
+SUP_18,1,48,False,False,cesta ausente em parte da janela
+SUP_19,44,48,False,True,cesta ausente em parte da janela
+SUP_20,46,48,False,True,cesta ausente em parte da janela
+SUP_21,0,48,False,False,cesta ausente em parte da janela
+SUP_22,45,48,False,True,cesta ausente em parte da janela
+SUP_23,2,48,False,False,cesta ausente em parte da janela
+SUP_24,44,48,False,True,cesta ausente em parte da janela
+SUP_25,1,48,False,False,cesta ausente em parte da janela
+SUP_27,47,48,False,True,cesta ausente em parte da janela
+SUP_29,18,48,False,False,cesta ausente em parte da janela
+SUP_30,14,48,False,False,cesta ausente em parte da janela
+SUP_31,1,48,False,False,cesta ausente em parte da janela
+SUP_32,48,48,True,True,painel integral
+SUP_33,42,48,False,True,cesta ausente em parte da janela
+SUP_34,41,48,False,True,cesta ausente em parte da janela
+SUP_36,45,48,False,True,cesta ausente em parte da janela
+SUP_37,1,48,False,False,cesta ausente em parte da janela
+SUP_38,47,48,False,True,cesta ausente em parte da janela
+SUP_39,41,48,False,True,cesta ausente em parte da janela
+SUP_40,1,48,False,False,cesta ausente em parte da janela
+SUP_41,47,48,False,True,cesta ausente em parte da janela
+SUP_42,1,48,False,False,cesta ausente em parte da janela
+SUP_43,44,48,False,True,cesta ausente em parte da janela
+SUP_44,3,48,False,False,cesta ausente em parte da janela
+SUP_45,2,48,False,False,cesta ausente em parte da janela
+SUP_46,41,48,False,True,cesta ausente em parte da janela
+SUP_47,43,48,False,True,cesta ausente em parte da janela
+SUP_50,48,48,True,True,painel integral
+SUP_51,46,48,False,True,cesta ausente em parte da janela

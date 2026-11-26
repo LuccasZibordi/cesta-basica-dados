@@ -1,24 +1,15 @@
-# Pendências reais para a entrega
+# Conferência para submissão — 26/11/2026
 
-A implementação e os relatórios analíticos devem ser avaliados junto de `validacao_final.md`. Ainda não se pode afirmar conformidade institucional integral.
+O pacote técnico reúne relatório coletivo identificado, código, base original, bases processadas e evidências de validação. Curso: Engenharia de Computação, turma 218040. Os quatro integrantes e RAs constam no coletivo.
 
-Luccas forneceu o modelo em 25/11/2026 e pediu explicitamente para não elaborar os relatórios individuais ainda. Cópia preservada em `docs/modelos/2s2026_Modelo_Relatorio_Curricularizacao_Extensao_PROGRAD.docx`; conteúdo institucional será conferido na etapa autorizada de elaboração.
+## Responsabilidade de cada integrante
 
-| Pendência | Quem fornece/confirma | Como encerrar |
-| --- | --- | --- |
-| Conferência do modelo institucional já recebido | Etapa futura de elaboração | Arquivo salvo; leitura/preenchimento adiados conforme pedido |
-| Identificação dos quatro integrantes e da turma | Grupo | Preencher identificação correta; apenas Luccas está identificado no contexto |
-| Contribuições, datas, atividades e horas individuais | Cada integrante | Registrar apenas atividades verdadeiras e respeitar o modelo |
-| Quatro relatórios individuais definitivos | Grupo, com apoio da assistente | Elaborar no modelo fornecido quando solicitado, com informações confirmadas |
-| Proveniência detalhada, dicionário/unidades e aliases | Responsável pela coleta/professor | Anexar evidência; até lá manter hipóteses e limites, sem declarar confirmação |
-| Prazo e formato aceito do relatório coletivo | Atividade | Conferir se HTML/Markdown ou PDF é aceito; HTML pode ser impresso em PDF |
-| Revisão do grupo e preparação da arguição | Todos | Entender escolhas, erros, limites e contribuição de cada um |
-| Submissão individual de relatório e suporte | Cada integrante | Confirmar envio na atividade de EXTENSÃO |
+- Enviar seu relatório individual na tarefa correspondente, conforme orientação do professor. Os individuais não estão neste ZIP.
+- Submeter o pacote técnico e conferir o comprovante de envio e o prazo na plataforma.
+- Preparar-se para explicar as escolhas metodológicas na arguição; consultar `arguicao.md`.
 
-A fonte foi preservada; suspeitas não foram corrigidas sem evidência. A análise pode ser defendida como exploratória e condicional, mas não como validação documental da coleta. Horas, nota e aprovação dependem da avaliação institucional.
+## Limites que permanecem documentados
 
-Nenhuma interação com comunidade, economia efetiva das famílias ou execução de divulgação foi inferida a partir da existência do código. O enunciado recebido não especifica um evento externo obrigatório; seguir o modelo quando fornecido.
+Unidades inferidas, equivalências entre produtos e critérios de quarentena não foram confirmados por um dicionário oficial da coleta. As análises são exploratórias e condicionais a essas hipóteses, com sensibilidade e limitações apresentadas no coletivo. Não foi comprovada economia efetiva de famílias nem participação direta de público externo no trabalho do grupo.
 
-## Atualização posterior — individual de Luccas (25/11/2026)
-
-Luccas autorizou posteriormente somente seu relatório individual. Documento preenchido em `entrega/relatorio_individual_Luccas_Gomes_Zibordi.docx` e no caminho original de Downloads. A cópia institucional em `docs/modelos` permanece virgem. Total de 40 h adotado conforme orientação do estudante, com rateio e intervalos de datas identificados como estimativas. Faltam conferir datas, quantitativos institucionais e paginação no Word. Não há comprovação de impacto social ou devolutiva já realizada. Os demais individuais continuam pendentes. O ZIP técnico produzido anteriormente não foi regenerado; o individual deve acompanhar o pacote como arquivo separado.
+Esses limites não foram ocultados nem substituídos por confirmações inventadas. Não há exigência conhecida no enunciado fornecido de criar dashboard, coletar uma nova base ou obter ganho dos modelos complexos sobre Naive. Aprovação de nota e horas cabe ao professor; esta revisão verifica os arquivos e sua execução.

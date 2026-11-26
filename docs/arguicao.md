@@ -14,6 +14,6 @@
 12. **Por que reajustar depois do teste?** A avaliação fica congelada. Para o próximo mês da base, usar todo o histórico disponível mantendo hiperparâmetros previamente escolhidos.
 13. **Se Naive ganhar, o projeto falhou?** Não. Responde que os modelos propostos não ofereceram ganho médio naquele teste. Não trocar recorte para conseguir resultado favorável.
 14. **Como reproduzir?** Mostrar requirements, comando completo, manifesto, testes e fonte preservada.
-15. **O que falta fora do código?** Relatórios individuais (modelo recebido e guardado, elaboração adiada por Luccas), dados reais de atividades/horas, confirmação da fonte e submissões.
+15. **O que falta fora do código?** Cada integrante envia seu relatório individual em tarefa separada. Restam a submissão, a preparação para a arguição e, para ampliar a aplicação dos resultados, a confirmação documental das hipóteses da coleta.
 
 Cada integrante deve consultar o relatório coletivo final, suas tabelas e a seção que implementou. A assistente não atesta domínio oral dos alunos.

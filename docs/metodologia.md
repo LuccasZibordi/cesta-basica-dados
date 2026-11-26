@@ -31,7 +31,7 @@ Por produto/mercado/mês, calcular média aritmética das observações válidas
 
 A série geral é a média das médias de cada mercado disponível naquele mês: cada mercado recebe o mesmo peso. Assim, uma loja com dez marcas não pesa dez vezes mais que outra com uma. Ainda pode haver efeito de composição quando mercados entram/saem: isso deve ser discutido e, se necessário, estudado com painel fixo.
 
-Usar mediana/min/máx e contagens para inspeção e sensibilidade. O mínimo entre médias de mercados não equivale ao menor preço individual ofertado. O integrante 2 deverá explicitar qual cenário de compra calcula.
+Usar mediana/min/máx e contagens para inspeção e sensibilidade. O mínimo entre médias de mercados não equivale ao menor preço individual ofertado. A comparação utiliza mínimos entre médias mensais de mercados, com painel e períodos equivalentes.
 
 ## Cobertura e lacunas
 
@@ -39,11 +39,11 @@ Expandir cada par mercado/produto presente na origem válida para identificaçã
 
 `cobertura` é meses com ao menos um preço elegível / total de meses da janela global. Não afirma que a loja estivesse ativa em todos os meses. Na execução inicial, 34 de 1.004 pares normalizados possuem os 48 meses completos. A série geral de um produto pode ser completa mesmo sem nenhum mercado individual completo.
 
-Não foi fixado um corte arbitrário de cobertura: o grupo recebe todas as séries e deve justificar a seleção. Farinha de Trigo e Pão Francês têm lacuna em março/2026 enquanto seus rótulos genéricos aguardam revisão. Não é correto preencher essa lacuna por associação não documentada.
+Não foi fixado um corte arbitrário de cobertura: a preparação fornece todas as séries; cada análise documenta seus critérios de seleção. Farinha de Trigo e Pão Francês têm lacuna em março/2026 enquanto seus rótulos genéricos aguardam revisão. Não é correto preencher essa lacuna por associação não documentada.
 
 ## Prevenção de vazamento temporal
 
-Não há imputação, média móvel, escala aprendida, detecção estatística de outliers ou decomposição nesta etapa. Cada preço mensal usa apenas observações desse mês. Para previsão de t+1, os colegas devem usar dados disponíveis até t e ajustar transformações/hiperparâmetros somente nos blocos de treino.
+Não há imputação, média móvel, escala aprendida, detecção estatística de outliers ou decomposição nesta etapa. Cada preço mensal usa apenas observações desse mês. Para previsão de t+1, a previsão usa dados disponíveis até t; ajusta os modelos no treino e seleciona hiperparâmetros na validação, mantendo o teste separado.
 
 A matriz de cobertura usa a janela completa e serve ao diagnóstico. Selecionar séries com base em cobertura futura pode introduzir viés de sobrevivência: para avaliar previsão como teria sido feita no passado, decidir elegibilidade apenas com o histórico disponível em cada corte. As próprias regras motivadas pela inspeção integral da base devem ser descritas como limpeza retrospectiva; não alegar avaliação prospectiva completamente cega.
 

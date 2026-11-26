@@ -1,0 +1,11 @@
+CESTA BÁSICA — ENTREGA COLETIVA
+Engenharia de Computação | Turma 218040 | 2º semestre de 2026
+
+1. Leia entrega/relatorio_coletivo.pdf para as questões, métodos, resultados e conclusões.
+2. README.md apresenta o projeto e termina com os comandos para instalação e execução.
+3. ICB_DADOS_2026.xlsx é a base original. dados/entrega_2026-11-26 contém as bases utilizadas e os resultados finais.
+4. Os scripts Python, config, requirements e tests permitem reproduzir o trabalho.
+5. docs/validacao_final.md e docs/verificacao_entrega_2026-11-26.json registram a revisão final. MANIFESTO_ARQUIVOS_SHA256.txt permite conferir os arquivos extraídos.
+
+Este pacote NÃO contém relatórios individuais nem modelos em branco. Cada integrante entrega seu relatório individual na tarefa correspondente.
+Não é necessário enviar os ZIPs antigos ou os backups junto deste pacote.

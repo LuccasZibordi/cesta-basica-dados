@@ -26,7 +26,7 @@ def gerar(dados_dir: Path) -> None:
     destino=dados_dir/'relatorios';destino.mkdir()
     d=json.loads((dados_dir/'diagnostico.json').read_text())
     texto=['# Análise comparativa e preditiva de preços da cesta básica',
-      'Relatório coletivo de PI e extensão — versão técnica gerada a partir dos dados. Identificação acadêmica do grupo e dados institucionais devem ser conferidos antes de submeter.',
+      'Relatório coletivo de PI e extensão — 2º semestre de 2026.\n\n**Instituição:** PUC-Campinas · Escola Politécnica  \n**Curso:** Engenharia de Computação  \n**Turma:** 218040  \n**Disciplina:** Sistemas Inteligentes e Aprendizado de Máquina  \n**Professor:** Fernando Soares de Aguiar Neto\n\n| Integrante | RA |\n| --- | --- |\n| Luccas Gomes Zibordi | 24007138 |\n| Bruno Vinicius Selingardi | 24004238 |\n| João Vitor Bombo Guimarães | 24018551 |\n| Vinícius de Moraes Chaves | 24007303 |',
       '## Introdução e aplicação esperada',
       'O estudo explora onde comprar, quando comprar e como interpretar previsões para o mês seguinte. O público potencial são consumidores e famílias interessados em organizar compras. O produto é uma análise acessível com gráficos e tabelas; não se afirma que houve atendimento comunitário ou economia efetivamente obtida.',
       'O professor solicita ao menos uma questão com objetivo/motivação, método/avaliação e conclusão. O grupo desenvolve as três questões previstas no planejamento. Os relatórios individuais seguem exigência institucional separada.',
@@ -57,7 +57,7 @@ def gerar(dados_dir: Path) -> None:
       '```bash\npython main.py --saida dados/reproducao --modulos comparacao_mercados sazonalidade previsao\n```',
       'O manifesto registra versões, hashes do código/configurações/origem e artefatos. O relatório deriva da mesma execução das tabelas e gráficos. A validação computacional não substitui validação dos dados ou aprovação acadêmica.',
       '## Referências e fontes',
-      '- Enunciado do professor fornecido por Luccas e Planejamento_PI_Cesta_Basica.pdf (quatro páginas), consultados em 25/11/2026. Modelo institucional dos relatórios individuais recebido em 25/11/2026 e preservado em docs/modelos; elaboração individual adiada a pedido de Luccas.',
+      '- Enunciado do professor fornecido por Luccas e Planejamento_PI_Cesta_Basica.pdf (quatro páginas), consultados em 25/11/2026. Modelo institucional dos relatórios individuais recebido em 25/11/2026 e preservado em docs/modelos. Cada integrante elabora e submete seu próprio relatório de extensão, acompanhado dos arquivos de suporte.',
       '- ICB_DADOS_2026.xlsx, base fornecida ao grupo, identificação detalhada da instituição/coleta pendente.',
       '- [STL — documentação oficial statsmodels](https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.STL.html). Decomposição sazonal por LOESS; opções utilizadas documentadas na questão 2.',
       '- [RandomForestRegressor — documentação oficial scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html). Parâmetros utilizados documentados na questão 3.',

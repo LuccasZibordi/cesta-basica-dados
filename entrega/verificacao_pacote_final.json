@@ -1,0 +1,14 @@
+{
+  "data": "2026-11-26",
+  "arquivo": "cesta-basica-entrega-final-2026-11-26.zip",
+  "sha256": "55ff51bd641712ca568337915af22aa893acc6d7d982de2da110ce4a2bf338c4",
+  "arquivos": 147,
+  "integridade_zip": "ok",
+  "hashes_extraidos": "todos conferem",
+  "testes_extraidos": "56 passed em 13.39s",
+  "relatorios_individuais": 0,
+  "codigo_py": 17,
+  "bases_csv": 65,
+  "planilhas_originais": 1,
+  "pdfs": 1
+}
